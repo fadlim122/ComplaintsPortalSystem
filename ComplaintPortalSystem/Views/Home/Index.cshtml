@@ -1,0 +1,225 @@
+﻿@using ComplaintPortalSystem.Common;
+@using ComplaintPortalSystem.Models;
+@model ComplaintPortalSystem.Models.AccountHolder
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @*<meta name="viewport" content="width=device-width, initial-scale=1">
+        @Styles.Render("~/Content/main.css")*@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            background-image: url("https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg");
+            background-size: 100% 100%;
+        }
+
+        .header {
+            max-width: 100%;
+            height: 300px;
+            padding: 60px;
+            padding-top: 85px;
+            text-align: center;
+            background: #b81818;
+            background-position: center;
+            color: white;
+            margin-top: 70px;
+            margin-bottom: 200px;
+            margin-left: 150px;
+            margin-right: 150px;
+            box-shadow: 4px 4px 15px 1px #000000;
+        }            
+
+        #welcomemsg {
+            color: #b81818;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 45px;
+            background-color: #e7e7e7;
+            padding: 20px;
+            border-radius: 9px;
+        }
+
+       @* .find {
+            color: black;
+            font-weight: 500;
+            text-align: center;
+            font-size: 16px;
+        }*@
+
+        .fa {
+            padding: 15px;
+            font-size: 25px;
+            width: 55px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+            .fa:hover {
+                opacity: 0.9;
+            }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+            color: white;
+        }
+
+        .icon {
+            margin-top: 70px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #welcomeModalPopup {
+            margin-top: 50px;
+        }
+
+        @@media only screen and (max-width: 1200px) {
+            .header {
+                max-width: 100%;
+                height: 300px;
+                padding: 30px;
+                text-align: center;
+                background: #b81818;
+                background-position: center;
+                color: white;
+                margin-top: 90px;
+                margin-left: 40px;
+                margin-right: 40px;
+                padding-top: 30px;
+            }
+
+        h1 {
+            font-size: 24px;
+        }
+        }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to The Murdoch Complaints Portal</h1>
+
+
+        @if (HttpContext.Current.User.Identity.IsAuthenticated)
+        {
+            if (UserSession.Role != null)
+            {
+                if (UserSession.Role.ToString() == UserRole.CENTRAL_UNIT.ToString() ||
+                    UserSession.Role.ToString() == UserRole.SUPERVISOR.ToString() || UserSession.Role.ToString() == UserRole.COMPLAINT_HANDLER.ToString() ||
+                    UserSession.Role.ToString() == UserRole.ADMIN.ToString())
+                {
+                    <h4 id="welcomemsg">Welcome @Html.DisplayFor(model => model.Name), let's give it our best today!</h4>
+                }
+                else
+                {
+                    <h4 id="welcomemsg">Welcome @Html.DisplayFor(model => model.Name), It's great to have you!</h4>
+                }
+
+            }
+        }
+    </div>
+    <div class="modal" id="welcomeModalPopup" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" style="text-align:center">Thank You!</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>
+                                Hello @Html.DisplayFor(model => model.Name), You have made a difference to "@ViewData["THIS_WEEK_CLOSED_CASE"]" people this week,
+                                "@ViewData["THIS_MONTH_CLOSED_CASE"]" people this month. To Date, You have helped "@ViewData["TOTAL_CLOSED_CASE"]" people
+                            </h4>
+                            <h4>Your actions will also make a difference in the "@ViewData["TOTAL_OPEN_CASE"]" new tickets you are working on today.</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>A Noble Spirit Embiggens the Smallest Man</h5>
+                            <img src="~/Images/capture1.jpg" height="150" width="200" />
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="icon">
+        @*<h4 class="find">Find us on</h4>*@
+        <a href="https://www.facebook.com/MurdochUniversity/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/murdochuniversity/?hl=en" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/school/murdoch-university/" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/MurdochUni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+    </div>
+
+
+    @if (HttpContext.Current.User.Identity.IsAuthenticated)
+    {
+        if (UserSession.Role != null)
+        {
+            if (UserSession.Role == UserRole.COMPLAINT_HANDLER.ToString())
+            {
+                if (Convert.ToInt32(ViewData["LoginCount"]) == 1)
+                {
+                    <script>
+                        $('#welcomeModalPopup').modal('show')
+                    </script>
+                }
+            }
+        }
+    }
+
+</body>
+</html>
+
+
+
+

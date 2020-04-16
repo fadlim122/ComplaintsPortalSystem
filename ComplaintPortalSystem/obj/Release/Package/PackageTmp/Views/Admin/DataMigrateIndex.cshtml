@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "DataMigrateIndex";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .btn {
+            padding: 30px;
+            margin: 20px;
+            font-size: x-large;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h2>Import Data to Database</h2>
+    <div class="container">
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Account Holder", "Index", "ImportFile")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Category", "ImportCategory", "ImportFile")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Department", "ImportDepartment", "ImportFile")</a>   
+    </div>
+</body>
+</html>
+
+

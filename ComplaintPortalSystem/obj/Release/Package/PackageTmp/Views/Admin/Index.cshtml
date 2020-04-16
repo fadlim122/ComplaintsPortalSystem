@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ComplaintPortalSystem.Models.AccountHolder>
+@using ComplaintPortalSystem.Common;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Register Admin Account</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class="btn btn-primary"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th></th>
+    </tr>
+    
+        @foreach (var item in Model)
+        {
+            if(item.Role == UserRole.ADMIN.ToString())
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class="btn btn-primary"}) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class="btn btn-info"}) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class="btn btn-danger"})
+                </td>
+            </tr>
+            }
+            
+        }
+
+    </table>

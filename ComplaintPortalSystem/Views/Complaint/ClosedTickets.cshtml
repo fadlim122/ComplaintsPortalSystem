@@ -1,0 +1,126 @@
+﻿@model IEnumerable<ComplaintPortalSystem.Models.Complaint>
+@using ComplaintPortalSystem.Models
+@using ComplaintPortalSystem.Common
+
+@{
+    ViewBag.Title = "ClosedTickets";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        .bgimg {
+            z-index: 1;
+            background-color: white;
+            padding: 30px;
+        }
+
+            .bgimg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+     </style>
+ </head>
+<body>
+    <header>
+        <h2>Closed Tickets</h2>
+    </header>
+    <hr style="border:0.6px solid #dbd9d9;" />
+    <div class="bgimg">
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    Role
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    Date Submitted
+                </th>
+                <th>
+                    Date Closed
+                </th>
+                <th>
+                    Red Flag
+                </th>
+                <th>Action</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @if (item.ComplaintOwnerID == null)
+                        {
+                            if (item.PublicEmail == null && item.PublicName == null)
+                            {
+                                @("ANONYMOUS");
+                            }
+                            else
+                            {
+                                @("PUBLIC");
+                            }
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.AccountHolder.Role)
+                        }
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateSubmitted)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateClose)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsRedFlag)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Manage", "Allocate", new { id = item.ID }, new { @class = "btn btn-primary" })
+                    </td>
+                </tr>
+            }
+
+        </table>
+</body>
+</html>

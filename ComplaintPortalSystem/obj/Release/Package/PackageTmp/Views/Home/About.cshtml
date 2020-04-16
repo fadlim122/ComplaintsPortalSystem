@@ -1,0 +1,110 @@
+﻿@model ComplaintPortalSystem.Models.AccountHolder
+@using ComplaintPortalSystem.Common
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            Name: 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            Email: 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            Role: 
+        </dt>
+
+        @if (UserSession.Role == UserRole.CENTRAL_UNIT.ToString())
+        {
+            <dd>
+                CENTRAL UNIT
+            </dd>
+        }
+        else if (UserSession.Role == UserRole.STUDENT.ToString())
+        {
+            <dd>
+                @Html.DisplayFor(model => model.Role)
+            </dd>
+
+            <dt>
+                Major: 
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Student.Major)
+            </dd>
+        }
+        else if (UserSession.Role == UserRole.STAFF.ToString())
+        {
+            <dd>
+                @Html.DisplayFor(model => model.Role)
+            </dd>
+
+            <dt>
+                Job Designation:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Staff.JobDesignation)
+            </dd>
+        }
+        else if (UserSession.Role == UserRole.COMPLAINT_HANDLER.ToString())
+        {
+            <dd>
+                COMPLAINT HANDLER
+            </dd>
+
+            <dt>
+                Department:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ComplaintHandler.Department.Name)
+            </dd>
+
+            <dt>
+                Supervisor:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ComplaintHandler.Supervisor.AccountHolder.Name)
+            </dd>
+        }
+        else if (UserSession.Role == UserRole.SUPERVISOR.ToString())
+        {
+            <dd>
+                @Html.DisplayFor(model => model.Role)
+            </dd>
+
+            <dt>
+                Department:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Supervisor.Department.Name)
+            </dd>
+        }
+        else
+        {
+            <dd>
+                @Html.DisplayFor(model => model.Role)
+            </dd>
+        }
+
+
+    </dl>
+</div>

@@ -1,0 +1,51 @@
+﻿@model ComplaintPortalSystem.Models.ComplaintHandler
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <h2>Complaint Handler Details</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountHolder.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountHolder.ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountHolder.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AccountHolder.Name)
+        </dd>
+
+        <dt>
+           Department
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.Name)
+        </dd>
+        <dt>
+           Supervisor
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Supervisor.AccountHolder.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountHolder.Role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountHolder.Role)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class="btn btn-info"}) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class="btn btn-primary"})
+</p>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3dd9d4793b2a4950a773d7ecce4e0c2e" Name="Diagram1">
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.Student" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.AccountHolder" Width="1.5" PointX="7.25" PointY="0.5" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.sysdiagram" Width="1.5" PointX="1.875" PointY="5.75" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_Student_AccountHolder1" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.ComplaintHandler" Width="1.5" PointX="12.625" PointY="3.75" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.Supervisor" Width="1.5" PointX="6.5" PointY="6" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_ComplaintHandler_AccountHolder" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_Supervisor_AccountHolder" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_ComplaintHandler_Supervisor" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.Department" Width="1.5" PointX="2.75" PointY="3.625" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_ComplaintHandler_Department1" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_Supervisor_Department1" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.Category" Width="1.5" PointX="0.75" PointY="12" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.Complaint" Width="1.5" PointX="4" PointY="10.5" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.ExternalAgency" Width="1.5" PointX="0.5" PointY="8.625" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.HandlerAssignment" Width="1.5" PointX="15.25" PointY="8.375" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.SupervisorAssignment" Width="1.5" PointX="9.125" PointY="9.5" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_Complaint_Category" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_Complaint_ExternalAgency" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_HandlerAssignment_Complaint" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_SupervisorAssignment_Complaint" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_HandlerAssignment_ComplaintHandler" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_SupervisorAssignment_Supervisor" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.Staff" Width="1.5" PointX="9.5" PointY="1.125" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_Staff_AccountHolder" />
+        <AssociationConnector Association="ComplaintPortalDBModel.FK_Complaint_AccountHolder" />
+        <EntityTypeShape EntityType="ComplaintPortalDBModel.AccountLog" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

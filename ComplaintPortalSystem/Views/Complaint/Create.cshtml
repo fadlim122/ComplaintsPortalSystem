@@ -1,0 +1,269 @@
+﻿@model ComplaintPortalSystem.Models.Complaint
+@using ComplaintPortalSystem.Models;
+@using ComplaintPortalSystem.Common;
+@{
+    ViewBag.Title = "Create Complaint";
+    IEnumerable<Category> categoryList = ViewData["CategoryList"] as IEnumerable<Category>;
+    IEnumerable<ExternalAgency> externalAgencyList = ViewData["ExternalAgencyList"] as IEnumerable<ExternalAgency>;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bg {
+            z-index: 1;
+            background-color: white;
+            padding: 40px;
+            margin-top: 20px;
+            margin-bottom: 90px;
+            width: 90%;
+            border-radius: 5px;
+            padding-top: 40px;
+        }
+
+            #bg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+
+        header h2, h5 {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+
+        .container .btn-info {
+            margin-left: -23px;
+            background-color: transparent;
+            color: dodgerblue;
+            border: none;
+        }
+
+
+        .border {
+            width: 80%;
+            border: thin grey solid;
+            margin-bottom: 50px;
+            padding-top: 30px;
+        }
+
+        .form-group {
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+
+        input[type=text], select, textarea, input[type=email] {
+            width: 700px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        .required-field::after {
+            content: " *";
+            color: red;
+        }
+
+        .form-group .btn {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border: none;
+            border-radius: 4px;
+            width: 85px;
+            border-radius: 3px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .form-group .btn-success {
+            background: #b81818;
+            color: #ffffff;
+            margin-left: 18%;
+        }
+
+            .form-group .btn-success:hover {
+                background: #a71111;
+            }
+
+        .form-group .btn-primary {
+            background: #969292;
+            color: #ffffff;
+            margin-left: 3%;
+        }
+
+            .form-group .btn-primary:hover {
+                background: #747373;
+            }
+
+        #works {
+            margin-top: 50px;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+
+    <div class="text-success">
+        @ViewBag.Success
+    </div>
+
+    @using (Html.BeginForm("Create", "Complaint", null, FormMethod.Post,
+                                  new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div id="bg">
+            <header>
+                <h2>Complaint Form</h2>
+                <h5>We would like to hear your thoughts, concerns or problems with anything, so we can improve!</h5>
+
+                <div class="container">
+                    <button type="button" id="myButton" class="btn btn-info" data-toggle="modal" data-target="#works">How It Works</button>
+                </div>
+                <div class="modal fade" id="works" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 style="text-align:center; color:orange">4 Quick Steps</h3>
+                                <h3 style="text-align:center; color:orange">For Your Voice To Be Heard</h3>
+                            </div>
+                            <div class="modal-body">
+                                <img src="~/Images/view1.png" height="150" width="550" />
+                                <br />
+                            </div>
+                            <div class="modal-footer" style="text-align:center">
+                                <button style="border-color: orange" type="button" class="btn btn-default" data-dismiss="modal">Let's get started!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </header>
+
+            <div class="form-horizontal">
+                <span style="color:red">*</span> <span>Indicates required fields</span>
+
+                <div class="border border-primary">
+
+                    @if (!HttpContext.Current.User.Identity.IsAuthenticated || UserSession.Role == null)
+                    {
+                        <div class="form-group">
+                            <label class="control-label col-md-2">Name</label>
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.PublicName, new { htmlAttributes = new { @class = "form-control", style = "width: 70%; max-width: 90%;", placeholder = "Optional if you want to submit as anonymous" } })
+                                @Html.ValidationMessageFor(model => model.PublicName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-2">Email</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.PublicEmail, new { htmlAttributes = new { @class = "form-control", style = "width: 70%; max-width: 90%;", placeholder = "Optional if you want to submit as anonymous" } })
+                                @Html.ValidationMessageFor(model => model.PublicEmail, "", new { @class = "text-danger" })
+
+                            </div>
+                        </div>
+                    }
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CategoryID, "CategoryID", htmlAttributes: new { @class = "control-label col-md-2 required-field" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.CategoryID, new SelectList(categoryList, "ID", "CategoryDescription"), htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2 required-field" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", @required = "required", style = "width: 70%; max-width: 90%;", placeholder = "Please enter the title of your feedback here" } })
+                            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2 required-field" })
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(model => model.Description, 10, 40, htmlAttributes: new { @class = "form-control width500", @required = "required", style = "width: 70%; max-width: 90%;", placeholder = "Please enter the details of your feedback here" })
+                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Attachment, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+
+                            <input id="ImagePath" title="Upload a product image"
+                                   type="file" name="file" />
+                            @*@Html.EditorFor(model => model.Attachment, new { htmlAttributes = new { @class = "form-control" } })*@
+                            @Html.ValidationMessageFor(model => model.Attachment, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <button type="submit" value="Submit" class="btn btn-success">Submit</button>
+                        <button type="button" value="Cancel" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Home")'">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <script>
+                var b1 = document.getElementById("myButton");
+
+                b1.onclick = function () {
+                    b1.style.backgroundColor = "transparent";
+                    b1.style.outline = "0";
+                    b1.style.color = "blue";
+                }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,131 @@
+﻿@model ComplaintPortalSystem.Models.Complaint
+
+@{
+    ViewBag.Title = "Feedback";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        .bgimg {
+            z-index: 1;
+            background-color: white;
+            padding: 30px;
+        }
+
+            .bgimg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        h4{
+            font-weight: bold;
+        }
+
+        p{
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Feedback</h2>
+    </header>
+    <hr style="border:0.6px solid #dbd9d9;" />
+    <div class="bgimg">
+        <br />
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>Rate our system</h4>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <p>Please rate the speed of our complaint system and staff:</p>
+
+
+                <div class="editor-field">
+                    @Html.RadioButtonFor(model => model.RatingSpeed, "1") Poor
+                    @Html.RadioButtonFor(model => model.RatingSpeed, "2") Fair
+                    @Html.RadioButtonFor(model => model.RatingSpeed, "3") Good
+                    @Html.RadioButtonFor(model => model.RatingSpeed, "4") Very Good
+                    @Html.RadioButtonFor(model => model.RatingSpeed, "5") Excellent
+                </div>
+                <br />
+                <br />
+
+                <p>Please rate the Efficacy of our complaint system:</p>
+                <div class="editor-field">
+                    @Html.RadioButtonFor(model => model.RatingEfficacy, "1") Poor
+                    @Html.RadioButtonFor(model => model.RatingEfficacy, "2") Fair
+                    @Html.RadioButtonFor(model => model.RatingEfficacy, "3") Good
+                    @Html.RadioButtonFor(model => model.RatingEfficacy, "4") Very Good
+                    @Html.RadioButtonFor(model => model.RatingEfficacy, "5") Excellent
+                </div>
+                <br />
+                <br />
+
+                <p>Please rate the Friendliness of our staff:</p>
+                <div class="editor-field">
+                    @Html.RadioButtonFor(model => model.RatingFriendliness, "1") Poor
+                    @Html.RadioButtonFor(model => model.RatingFriendliness, "2") Fair
+                    @Html.RadioButtonFor(model => model.RatingFriendliness, "3") Good
+                    @Html.RadioButtonFor(model => model.RatingFriendliness, "4") Very Good
+                    @Html.RadioButtonFor(model => model.RatingFriendliness, "5") Excellent
+                </div>
+
+                <br />
+                <br />
+
+                <p>Help us improve! :</p>
+                <div>
+
+                    @Html.TextAreaFor(model => model.RatingFeedback, 10, 40, htmlAttributes: new { style = "width: 100%; max-width: 90%;", placeholder = "Please enter your feedback here" })
+                </div>
+
+                <br />
+                <br />
+                <div>
+                    <input type="submit" value="Save" class="btn btn-success" />
+                </div>
+            </div>
+
+
+        }
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+

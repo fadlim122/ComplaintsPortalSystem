@@ -1,0 +1,220 @@
+﻿@model ComplaintPortalSystem.Models.AccountHolder
+@using ComplaintPortalSystem.Common
+@{
+    ViewBag.Title = "Profile";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bgimg {
+            z-index: 1;
+        }
+
+            #bgimg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        #bgimg {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            width: 50%;
+        }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+
+        dl {
+            margin-top: 10px;
+            padding: 30px;
+        }
+
+        dl {
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            background-color: #f9f5f5;
+        }
+
+        .ie7 dl {
+            overflow: hidden;
+        }
+
+        dt,
+        dd {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+            dd ~ dt,
+            dd ~ dd {
+                border-top: 0.5px solid #bdc8ca;
+            }
+
+        dt {
+            float: left;
+            width: 35%;
+            padding-bottom: 0;
+        }
+
+        .ie7 dt {
+            padding-bottom: 10px;
+            clear: both;
+        }
+
+        dd {
+            margin-left: 35%;
+            border-left: 0.7px dotted #bdc8ca;
+            background-color: #fff;
+        }
+
+        .ie7 dd {
+            margin-left: 40%;
+            overflow: hidden;
+        }
+
+        dd:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+     
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>My Profile</h2>
+    </header>
+    <hr style="border: 0.6px solid #dbd9d9;" />
+
+    <div id="bgimg">
+        <dl class="dl-horizontal">
+            <dt>
+                Name:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                Email:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                Role:
+            </dt>
+
+            @if (UserSession.Role == UserRole.CENTRAL_UNIT.ToString())
+            {
+                <dd>
+                    CENTRAL UNIT
+                </dd>
+            }
+            else if (UserSession.Role == UserRole.STUDENT.ToString())
+            {
+                <dd>
+                    @Html.DisplayFor(model => model.Role)
+                </dd>
+
+                <dt>
+                    Major:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Student.Major)
+                </dd>
+            }
+            else if (UserSession.Role == UserRole.STAFF.ToString())
+            {
+                <dd>
+                    @Html.DisplayFor(model => model.Role)
+                </dd>
+
+                <dt>
+                    Job Designation:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Staff.JobDesignation)
+                </dd>
+            }
+            else if (UserSession.Role == UserRole.COMPLAINT_HANDLER.ToString())
+            {
+                <dd>
+                    COMPLAINT HANDLER
+                </dd>
+
+                <dt>
+                    Department:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ComplaintHandler.Department.Name)
+                </dd>
+
+                <dt>
+                    Supervisor:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ComplaintHandler.Supervisor.AccountHolder.Name)
+                </dd>
+            }
+            else if (UserSession.Role == UserRole.SUPERVISOR.ToString())
+            {
+                <dd>
+                    @Html.DisplayFor(model => model.Role)
+                </dd>
+
+                <dt>
+                    Department:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Supervisor.Department.Name)
+                </dd>
+            }
+            else
+            {
+                <dd>
+                    @Html.DisplayFor(model => model.Role)
+                </dd>
+            }
+
+
+        </dl>
+    </div>
+
+</body>
+</html>

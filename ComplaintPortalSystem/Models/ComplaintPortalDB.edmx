@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ComplaintPortalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AccountHolder">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Role" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ResetPasswordCode" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="AccountLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountID" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Timestamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryDescription" Type="varchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Complaint">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Attachment" Type="varchar(max)" />
+          <Property Name="Description" Type="varchar" MaxLength="5000" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="DateSubmitted" Type="datetime" Nullable="false" />
+          <Property Name="DateClose" Type="datetime" />
+          <Property Name="IsRedFlag" Type="bit" />
+          <Property Name="RatingEfficacy" Type="int" />
+          <Property Name="RatingSpeed" Type="int" />
+          <Property Name="RatingFriendliness" Type="int" />
+          <Property Name="RatingFeedback" Type="varchar" MaxLength="1000" />
+          <Property Name="CentralUnitID" Type="int" />
+          <Property Name="ComplaintOwnerID" Type="int" />
+          <Property Name="PublicEmail" Type="varchar" MaxLength="200" />
+          <Property Name="PublicName" Type="varchar" MaxLength="100" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="ExternalAgencyID" Type="int" />
+        </EntityType>
+        <EntityType Name="ComplaintHandler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="DepartmentID" Type="int" Nullable="false" />
+          <Property Name="SupervisorID" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="EndDate" Type="date" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="HODName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="HODEmail" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ExternalAgency">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ContactPerson" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ContactNumber" Type="int" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HandlerAssignment">
+          <Key>
+            <PropertyRef Name="HandlerID" />
+            <PropertyRef Name="ComplaintID" />
+          </Key>
+          <Property Name="HandlerID" Type="int" Nullable="false" />
+          <Property Name="ComplaintID" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Remark" Type="varchar" MaxLength="5000" />
+          <Property Name="ResponseDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="JobDesignation" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Major" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Supervisor">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="DepartmentID" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="EndDate" Type="date" />
+        </EntityType>
+        <EntityType Name="SupervisorAssignment">
+          <Key>
+            <PropertyRef Name="SupervisorID" />
+            <PropertyRef Name="ComplaintID" />
+          </Key>
+          <Property Name="SupervisorID" Type="int" Nullable="false" />
+          <Property Name="ComplaintID" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="100" />
+          <Property Name="Remark" Type="varchar" MaxLength="5000" />
+          <Property Name="ResponseDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_Complaint_AccountHolder">
+          <End Role="AccountHolder" Type="Self.AccountHolder" Multiplicity="0..1" />
+          <End Role="Complaint" Type="Self.Complaint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Complaint">
+              <PropertyRef Name="ComplaintOwnerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Complaint_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Complaint" Type="Self.Complaint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Complaint">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Complaint_ExternalAgency">
+          <End Role="ExternalAgency" Type="Self.ExternalAgency" Multiplicity="0..1" />
+          <End Role="Complaint" Type="Self.Complaint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExternalAgency">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Complaint">
+              <PropertyRef Name="ExternalAgencyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ComplaintHandler_AccountHolder">
+          <End Role="AccountHolder" Type="Self.AccountHolder" Multiplicity="1" />
+          <End Role="ComplaintHandler" Type="Self.ComplaintHandler" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ComplaintHandler">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ComplaintHandler_Department1">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="ComplaintHandler" Type="Self.ComplaintHandler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ComplaintHandler">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ComplaintHandler_Supervisor">
+          <End Role="Supervisor" Type="Self.Supervisor" Multiplicity="1" />
+          <End Role="ComplaintHandler" Type="Self.ComplaintHandler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supervisor">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ComplaintHandler">
+              <PropertyRef Name="SupervisorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HandlerAssignment_Complaint">
+          <End Role="Complaint" Type="Self.Complaint" Multiplicity="1" />
+          <End Role="HandlerAssignment" Type="Self.HandlerAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Complaint">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HandlerAssignment">
+              <PropertyRef Name="ComplaintID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HandlerAssignment_ComplaintHandler">
+          <End Role="ComplaintHandler" Type="Self.ComplaintHandler" Multiplicity="1" />
+          <End Role="HandlerAssignment" Type="Self.HandlerAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ComplaintHandler">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HandlerAssignment">
+              <PropertyRef Name="HandlerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Staff_AccountHolder">
+          <End Role="AccountHolder" Type="Self.AccountHolder" Multiplicity="1" />
+          <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Staff">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Student_AccountHolder1">
+          <End Role="AccountHolder" Type="Self.AccountHolder" Multiplicity="1" />
+          <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supervisor_AccountHolder">
+          <End Role="AccountHolder" Type="Self.AccountHolder" Multiplicity="1" />
+          <End Role="Supervisor" Type="Self.Supervisor" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Supervisor">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supervisor_Department1">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="Supervisor" Type="Self.Supervisor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Supervisor">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupervisorAssignment_Complaint">
+          <End Role="Complaint" Type="Self.Complaint" Multiplicity="1" />
+          <End Role="SupervisorAssignment" Type="Self.SupervisorAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Complaint">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SupervisorAssignment">
+              <PropertyRef Name="ComplaintID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupervisorAssignment_Supervisor">
+          <End Role="Supervisor" Type="Self.Supervisor" Multiplicity="1" />
+          <End Role="SupervisorAssignment" Type="Self.SupervisorAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supervisor">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SupervisorAssignment">
+              <PropertyRef Name="SupervisorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="GetCaseNumberByUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userId" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="ComplaintPortalDBModelStoreContainer">
+          <EntitySet Name="AccountHolder" EntityType="Self.AccountHolder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AccountLog" EntityType="Self.AccountLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Complaint" EntityType="Self.Complaint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ComplaintHandler" EntityType="Self.ComplaintHandler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExternalAgency" EntityType="Self.ExternalAgency" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HandlerAssignment" EntityType="Self.HandlerAssignment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Supervisor" EntityType="Self.Supervisor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SupervisorAssignment" EntityType="Self.SupervisorAssignment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Complaint_AccountHolder" Association="Self.FK_Complaint_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolder" />
+            <End Role="Complaint" EntitySet="Complaint" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Complaint_Category" Association="Self.FK_Complaint_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Complaint" EntitySet="Complaint" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Complaint_ExternalAgency" Association="Self.FK_Complaint_ExternalAgency">
+            <End Role="ExternalAgency" EntitySet="ExternalAgency" />
+            <End Role="Complaint" EntitySet="Complaint" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ComplaintHandler_AccountHolder" Association="Self.FK_ComplaintHandler_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolder" />
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ComplaintHandler_Department1" Association="Self.FK_ComplaintHandler_Department1">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ComplaintHandler_Supervisor" Association="Self.FK_ComplaintHandler_Supervisor">
+            <End Role="Supervisor" EntitySet="Supervisor" />
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HandlerAssignment_Complaint" Association="Self.FK_HandlerAssignment_Complaint">
+            <End Role="Complaint" EntitySet="Complaint" />
+            <End Role="HandlerAssignment" EntitySet="HandlerAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HandlerAssignment_ComplaintHandler" Association="Self.FK_HandlerAssignment_ComplaintHandler">
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandler" />
+            <End Role="HandlerAssignment" EntitySet="HandlerAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Staff_AccountHolder" Association="Self.FK_Staff_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolder" />
+            <End Role="Staff" EntitySet="Staff" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Student_AccountHolder1" Association="Self.FK_Student_AccountHolder1">
+            <End Role="AccountHolder" EntitySet="AccountHolder" />
+            <End Role="Student" EntitySet="Student" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supervisor_AccountHolder" Association="Self.FK_Supervisor_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolder" />
+            <End Role="Supervisor" EntitySet="Supervisor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supervisor_Department1" Association="Self.FK_Supervisor_Department1">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Supervisor" EntitySet="Supervisor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupervisorAssignment_Complaint" Association="Self.FK_SupervisorAssignment_Complaint">
+            <End Role="Complaint" EntitySet="Complaint" />
+            <End Role="SupervisorAssignment" EntitySet="SupervisorAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupervisorAssignment_Supervisor" Association="Self.FK_SupervisorAssignment_Supervisor">
+            <End Role="Supervisor" EntitySet="Supervisor" />
+            <End Role="SupervisorAssignment" EntitySet="SupervisorAssignment" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ComplaintPortalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ComplaintPortalDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Students" EntityType="ComplaintPortalDBModel.Student" />
+          <EntitySet Name="AccountHolders" EntityType="ComplaintPortalDBModel.AccountHolder" />
+          <EntitySet Name="sysdiagrams" EntityType="ComplaintPortalDBModel.sysdiagram" />
+          <AssociationSet Name="FK_Student_AccountHolder1" Association="ComplaintPortalDBModel.FK_Student_AccountHolder1">
+            <End Role="AccountHolder" EntitySet="AccountHolders" />
+            <End Role="Student" EntitySet="Students" />
+          </AssociationSet>
+          <EntitySet Name="ComplaintHandlers" EntityType="ComplaintPortalDBModel.ComplaintHandler" />
+          <EntitySet Name="Supervisors" EntityType="ComplaintPortalDBModel.Supervisor" />
+          <AssociationSet Name="FK_ComplaintHandler_AccountHolder" Association="ComplaintPortalDBModel.FK_ComplaintHandler_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolders" />
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandlers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supervisor_AccountHolder" Association="ComplaintPortalDBModel.FK_Supervisor_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolders" />
+            <End Role="Supervisor" EntitySet="Supervisors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ComplaintHandler_Supervisor" Association="ComplaintPortalDBModel.FK_ComplaintHandler_Supervisor">
+            <End Role="Supervisor" EntitySet="Supervisors" />
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandlers" />
+          </AssociationSet>
+          <EntitySet Name="Departments" EntityType="ComplaintPortalDBModel.Department" />
+          <AssociationSet Name="FK_ComplaintHandler_Department1" Association="ComplaintPortalDBModel.FK_ComplaintHandler_Department1">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandlers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supervisor_Department1" Association="ComplaintPortalDBModel.FK_Supervisor_Department1">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="Supervisor" EntitySet="Supervisors" />
+          </AssociationSet>
+          <EntitySet Name="Categories" EntityType="ComplaintPortalDBModel.Category" />
+          <EntitySet Name="Complaints" EntityType="ComplaintPortalDBModel.Complaint" />
+          <EntitySet Name="ExternalAgencies" EntityType="ComplaintPortalDBModel.ExternalAgency" />
+          <EntitySet Name="HandlerAssignments" EntityType="ComplaintPortalDBModel.HandlerAssignment" />
+          <EntitySet Name="SupervisorAssignments" EntityType="ComplaintPortalDBModel.SupervisorAssignment" />
+          <AssociationSet Name="FK_Complaint_Category" Association="ComplaintPortalDBModel.FK_Complaint_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Complaint" EntitySet="Complaints" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Complaint_ExternalAgency" Association="ComplaintPortalDBModel.FK_Complaint_ExternalAgency">
+            <End Role="ExternalAgency" EntitySet="ExternalAgencies" />
+            <End Role="Complaint" EntitySet="Complaints" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HandlerAssignment_Complaint" Association="ComplaintPortalDBModel.FK_HandlerAssignment_Complaint">
+            <End Role="Complaint" EntitySet="Complaints" />
+            <End Role="HandlerAssignment" EntitySet="HandlerAssignments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupervisorAssignment_Complaint" Association="ComplaintPortalDBModel.FK_SupervisorAssignment_Complaint">
+            <End Role="Complaint" EntitySet="Complaints" />
+            <End Role="SupervisorAssignment" EntitySet="SupervisorAssignments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HandlerAssignment_ComplaintHandler" Association="ComplaintPortalDBModel.FK_HandlerAssignment_ComplaintHandler">
+            <End Role="ComplaintHandler" EntitySet="ComplaintHandlers" />
+            <End Role="HandlerAssignment" EntitySet="HandlerAssignments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupervisorAssignment_Supervisor" Association="ComplaintPortalDBModel.FK_SupervisorAssignment_Supervisor">
+            <End Role="Supervisor" EntitySet="Supervisors" />
+            <End Role="SupervisorAssignment" EntitySet="SupervisorAssignments" />
+          </AssociationSet>
+          <EntitySet Name="Staffs" EntityType="ComplaintPortalDBModel.Staff" />
+          <AssociationSet Name="FK_Staff_AccountHolder" Association="ComplaintPortalDBModel.FK_Staff_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolders" />
+            <End Role="Staff" EntitySet="Staffs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Complaint_AccountHolder" Association="ComplaintPortalDBModel.FK_Complaint_AccountHolder">
+            <End Role="AccountHolder" EntitySet="AccountHolders" />
+            <End Role="Complaint" EntitySet="Complaints" />
+          </AssociationSet>
+          <FunctionImport Name="GetCaseNumberByUser" ReturnType="Collection(ComplaintPortalDBModel.GetCaseNumberByUser_Result)">
+          <Parameter Name="userId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="AccountLogs" EntityType="ComplaintPortalDBModel.AccountLog" />
+        </EntityContainer>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Major" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AccountHolder" Relationship="ComplaintPortalDBModel.FK_Student_AccountHolder1" FromRole="Student" ToRole="AccountHolder" />
+        </EntityType>
+        <EntityType Name="AccountHolder">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Role" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Student" Relationship="ComplaintPortalDBModel.FK_Student_AccountHolder1" FromRole="AccountHolder" ToRole="Student" />
+          <NavigationProperty Name="ComplaintHandler" Relationship="ComplaintPortalDBModel.FK_ComplaintHandler_AccountHolder" FromRole="AccountHolder" ToRole="ComplaintHandler" />
+          <NavigationProperty Name="Supervisor" Relationship="ComplaintPortalDBModel.FK_Supervisor_AccountHolder" FromRole="AccountHolder" ToRole="Supervisor" />
+          <NavigationProperty Name="Staff" Relationship="ComplaintPortalDBModel.FK_Staff_AccountHolder" FromRole="AccountHolder" ToRole="Staff" />
+          <NavigationProperty Name="Complaints" Relationship="ComplaintPortalDBModel.FK_Complaint_AccountHolder" FromRole="AccountHolder" ToRole="Complaint" />
+          <Property Name="ResetPasswordCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_Student_AccountHolder1">
+          <End Type="ComplaintPortalDBModel.AccountHolder" Role="AccountHolder" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.Student" Role="Student" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ComplaintHandler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+          <Property Name="SupervisorID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AccountHolder" Relationship="ComplaintPortalDBModel.FK_ComplaintHandler_AccountHolder" FromRole="ComplaintHandler" ToRole="AccountHolder" />
+          <NavigationProperty Name="Supervisor" Relationship="ComplaintPortalDBModel.FK_ComplaintHandler_Supervisor" FromRole="ComplaintHandler" ToRole="Supervisor" />
+          <NavigationProperty Name="Department" Relationship="ComplaintPortalDBModel.FK_ComplaintHandler_Department1" FromRole="ComplaintHandler" ToRole="Department" />
+          <NavigationProperty Name="HandlerAssignments" Relationship="ComplaintPortalDBModel.FK_HandlerAssignment_ComplaintHandler" FromRole="ComplaintHandler" ToRole="HandlerAssignment" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Supervisor">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AccountHolder" Relationship="ComplaintPortalDBModel.FK_Supervisor_AccountHolder" FromRole="Supervisor" ToRole="AccountHolder" />
+          <NavigationProperty Name="ComplaintHandlers" Relationship="ComplaintPortalDBModel.FK_ComplaintHandler_Supervisor" FromRole="Supervisor" ToRole="ComplaintHandler" />
+          <NavigationProperty Name="Department" Relationship="ComplaintPortalDBModel.FK_Supervisor_Department1" FromRole="Supervisor" ToRole="Department" />
+          <NavigationProperty Name="SupervisorAssignments" Relationship="ComplaintPortalDBModel.FK_SupervisorAssignment_Supervisor" FromRole="Supervisor" ToRole="SupervisorAssignment" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <Association Name="FK_ComplaintHandler_AccountHolder">
+          <End Type="ComplaintPortalDBModel.AccountHolder" Role="AccountHolder" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.ComplaintHandler" Role="ComplaintHandler" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ComplaintHandler">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supervisor_AccountHolder">
+          <End Type="ComplaintPortalDBModel.AccountHolder" Role="AccountHolder" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.Supervisor" Role="Supervisor" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Supervisor">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ComplaintHandler_Supervisor">
+          <End Type="ComplaintPortalDBModel.Supervisor" Role="Supervisor" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.ComplaintHandler" Role="ComplaintHandler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supervisor">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ComplaintHandler">
+              <PropertyRef Name="SupervisorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HODName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HODEmail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ComplaintHandlers" Relationship="ComplaintPortalDBModel.FK_ComplaintHandler_Department1" FromRole="Department" ToRole="ComplaintHandler" />
+          <NavigationProperty Name="Supervisors" Relationship="ComplaintPortalDBModel.FK_Supervisor_Department1" FromRole="Department" ToRole="Supervisor" />
+        </EntityType>
+        <Association Name="FK_ComplaintHandler_Department1">
+          <End Type="ComplaintPortalDBModel.Department" Role="Department" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.ComplaintHandler" Role="ComplaintHandler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ComplaintHandler">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supervisor_Department1">
+          <End Type="ComplaintPortalDBModel.Department" Role="Department" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.Supervisor" Role="Supervisor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Supervisor">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryDescription" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Complaints" Relationship="ComplaintPortalDBModel.FK_Complaint_Category" FromRole="Category" ToRole="Complaint" />
+        </EntityType>
+        <EntityType Name="Complaint">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DateSubmitted" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateClose" Type="DateTime" Precision="3" />
+          <Property Name="IsRedFlag" Type="Boolean" />
+          <Property Name="CentralUnitID" Type="Int32" />
+          <Property Name="ComplaintOwnerID" Type="Int32" />
+          <Property Name="PublicEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PublicName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CategoryID" Type="Int32" Nullable="false" />
+          <Property Name="ExternalAgencyID" Type="Int32" />
+          <NavigationProperty Name="Category" Relationship="ComplaintPortalDBModel.FK_Complaint_Category" FromRole="Complaint" ToRole="Category" />
+          <NavigationProperty Name="ExternalAgency" Relationship="ComplaintPortalDBModel.FK_Complaint_ExternalAgency" FromRole="Complaint" ToRole="ExternalAgency" />
+          <NavigationProperty Name="HandlerAssignments" Relationship="ComplaintPortalDBModel.FK_HandlerAssignment_Complaint" FromRole="Complaint" ToRole="HandlerAssignment" />
+          <NavigationProperty Name="SupervisorAssignments" Relationship="ComplaintPortalDBModel.FK_SupervisorAssignment_Complaint" FromRole="Complaint" ToRole="SupervisorAssignment" />
+          <Property Name="RatingFeedback" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Attachment" Type="String" Unicode="false" FixedLength="false" MaxLength="Max" />
+          <Property Name="RatingEfficacy" Type="Int32" />
+          <Property Name="RatingSpeed" Type="Int32" />
+          <Property Name="RatingFriendliness" Type="Int32" />
+          <NavigationProperty Name="AccountHolder" Relationship="ComplaintPortalDBModel.FK_Complaint_AccountHolder" FromRole="Complaint" ToRole="AccountHolder" />
+        </EntityType>
+        <EntityType Name="ExternalAgency">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ContactPerson" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContactNumber" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Complaints" Relationship="ComplaintPortalDBModel.FK_Complaint_ExternalAgency" FromRole="ExternalAgency" ToRole="Complaint" />
+        </EntityType>
+        <EntityType Name="HandlerAssignment">
+          <Key>
+            <PropertyRef Name="HandlerID" />
+            <PropertyRef Name="ComplaintID" />
+          </Key>
+          <Property Name="HandlerID" Type="Int32" Nullable="false" />
+          <Property Name="ComplaintID" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Remark" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="ResponseDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Complaint" Relationship="ComplaintPortalDBModel.FK_HandlerAssignment_Complaint" FromRole="HandlerAssignment" ToRole="Complaint" />
+          <NavigationProperty Name="ComplaintHandler" Relationship="ComplaintPortalDBModel.FK_HandlerAssignment_ComplaintHandler" FromRole="HandlerAssignment" ToRole="ComplaintHandler" />
+        </EntityType>
+        <EntityType Name="SupervisorAssignment">
+          <Key>
+            <PropertyRef Name="SupervisorID" />
+            <PropertyRef Name="ComplaintID" />
+          </Key>
+          <Property Name="SupervisorID" Type="Int32" Nullable="false" />
+          <Property Name="ComplaintID" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Remark" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="ResponseDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Complaint" Relationship="ComplaintPortalDBModel.FK_SupervisorAssignment_Complaint" FromRole="SupervisorAssignment" ToRole="Complaint" />
+          <NavigationProperty Name="Supervisor" Relationship="ComplaintPortalDBModel.FK_SupervisorAssignment_Supervisor" FromRole="SupervisorAssignment" ToRole="Supervisor" />
+        </EntityType>
+        <Association Name="FK_Complaint_Category">
+          <End Type="ComplaintPortalDBModel.Category" Role="Category" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.Complaint" Role="Complaint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Complaint">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Complaint_ExternalAgency">
+          <End Type="ComplaintPortalDBModel.ExternalAgency" Role="ExternalAgency" Multiplicity="0..1" />
+          <End Type="ComplaintPortalDBModel.Complaint" Role="Complaint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExternalAgency">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Complaint">
+              <PropertyRef Name="ExternalAgencyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HandlerAssignment_Complaint">
+          <End Type="ComplaintPortalDBModel.Complaint" Role="Complaint" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.HandlerAssignment" Role="HandlerAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Complaint">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HandlerAssignment">
+              <PropertyRef Name="ComplaintID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupervisorAssignment_Complaint">
+          <End Type="ComplaintPortalDBModel.Complaint" Role="Complaint" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.SupervisorAssignment" Role="SupervisorAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Complaint">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SupervisorAssignment">
+              <PropertyRef Name="ComplaintID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HandlerAssignment_ComplaintHandler">
+          <End Type="ComplaintPortalDBModel.ComplaintHandler" Role="ComplaintHandler" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.HandlerAssignment" Role="HandlerAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ComplaintHandler">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HandlerAssignment">
+              <PropertyRef Name="HandlerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupervisorAssignment_Supervisor">
+          <End Type="ComplaintPortalDBModel.Supervisor" Role="Supervisor" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.SupervisorAssignment" Role="SupervisorAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supervisor">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SupervisorAssignment">
+              <PropertyRef Name="SupervisorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="JobDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="AccountHolder" Relationship="ComplaintPortalDBModel.FK_Staff_AccountHolder" FromRole="Staff" ToRole="AccountHolder" />
+        </EntityType>
+        <Association Name="FK_Staff_AccountHolder">
+          <End Type="ComplaintPortalDBModel.AccountHolder" Role="AccountHolder" Multiplicity="1" />
+          <End Type="ComplaintPortalDBModel.Staff" Role="Staff" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Staff">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Complaint_AccountHolder">
+          <End Type="ComplaintPortalDBModel.AccountHolder" Role="AccountHolder" Multiplicity="0..1" />
+          <End Type="ComplaintPortalDBModel.Complaint" Role="Complaint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AccountHolder">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Complaint">
+              <PropertyRef Name="ComplaintOwnerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="GetCaseNumberByUser_Result">
+          <Property Type="Int32" Name="TOTAL_OPEN_CASE" Nullable="true" />
+          <Property Type="Int32" Name="THIS_WEEK_CLOSED_CASE" Nullable="true" />
+          <Property Type="Int32" Name="THIS_MONTH_CLOSED_CASE" Nullable="true" />
+          <Property Type="Int32" Name="TOTAL_CLOSED_CASE" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="AccountLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountID" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ComplaintPortalDBModelStoreContainer" CdmEntityContainer="ComplaintPortalDBEntities">
+          <EntitySetMapping Name="Students">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.Student">
+              <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="Major" ColumnName="Major" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AccountHolders">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.AccountHolder">
+              <MappingFragment StoreEntitySet="AccountHolder">
+                <ScalarProperty Name="ResetPasswordCode" ColumnName="ResetPasswordCode" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ComplaintHandlers">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.ComplaintHandler">
+              <MappingFragment StoreEntitySet="ComplaintHandler">
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="SupervisorID" ColumnName="SupervisorID" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Supervisors">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.Supervisor">
+              <MappingFragment StoreEntitySet="Supervisor">
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="HODEmail" ColumnName="HODEmail" />
+                <ScalarProperty Name="HODName" ColumnName="HODName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Complaints">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.Complaint">
+              <MappingFragment StoreEntitySet="Complaint">
+                <ScalarProperty Name="RatingFriendliness" ColumnName="RatingFriendliness" />
+                <ScalarProperty Name="RatingSpeed" ColumnName="RatingSpeed" />
+                <ScalarProperty Name="RatingEfficacy" ColumnName="RatingEfficacy" />
+                <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+                <ScalarProperty Name="RatingFeedback" ColumnName="RatingFeedback" />
+                <ScalarProperty Name="ExternalAgencyID" ColumnName="ExternalAgencyID" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="PublicName" ColumnName="PublicName" />
+                <ScalarProperty Name="PublicEmail" ColumnName="PublicEmail" />
+                <ScalarProperty Name="ComplaintOwnerID" ColumnName="ComplaintOwnerID" />
+                <ScalarProperty Name="CentralUnitID" ColumnName="CentralUnitID" />
+                <ScalarProperty Name="IsRedFlag" ColumnName="IsRedFlag" />
+                <ScalarProperty Name="DateClose" ColumnName="DateClose" />
+                <ScalarProperty Name="DateSubmitted" ColumnName="DateSubmitted" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExternalAgencies">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.ExternalAgency">
+              <MappingFragment StoreEntitySet="ExternalAgency">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+                <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HandlerAssignments">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.HandlerAssignment">
+              <MappingFragment StoreEntitySet="HandlerAssignment">
+                <ScalarProperty Name="ResponseDate" ColumnName="ResponseDate" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ComplaintID" ColumnName="ComplaintID" />
+                <ScalarProperty Name="HandlerID" ColumnName="HandlerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SupervisorAssignments">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.SupervisorAssignment">
+              <MappingFragment StoreEntitySet="SupervisorAssignment">
+                <ScalarProperty Name="ResponseDate" ColumnName="ResponseDate" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ComplaintID" ColumnName="ComplaintID" />
+                <ScalarProperty Name="SupervisorID" ColumnName="SupervisorID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Staffs">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.Staff">
+              <MappingFragment StoreEntitySet="Staff">
+                <ScalarProperty Name="JobDesignation" ColumnName="JobDesignation" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetCaseNumberByUser" FunctionName="ComplaintPortalDBModel.Store.GetCaseNumberByUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ComplaintPortalDBModel.GetCaseNumberByUser_Result">
+                <ScalarProperty Name="TOTAL_OPEN_CASE" ColumnName="TOTAL_OPEN_CASE" />
+                <ScalarProperty Name="THIS_WEEK_CLOSED_CASE" ColumnName="THIS_WEEK_CLOSED_CASE" />
+                <ScalarProperty Name="THIS_MONTH_CLOSED_CASE" ColumnName="THIS_MONTH_CLOSED_CASE" />
+                <ScalarProperty Name="TOTAL_CLOSED_CASE" ColumnName="TOTAL_CLOSED_CASE" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="AccountLogs">
+            <EntityTypeMapping TypeName="ComplaintPortalDBModel.AccountLog">
+              <MappingFragment StoreEntitySet="AccountLog">
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,111 @@
+﻿@model ComplaintPortalSystem.Models.Complaint
+@using ComplaintPortalSystem.Models;
+@using ComplaintPortalSystem.Common;
+@{
+    ViewBag.Title = "Create";
+    IEnumerable<Category> categoryList = ViewData["CategoryList"] as IEnumerable<Category>;
+    IEnumerable<ExternalAgency> externalAgencyList = ViewData["ExternalAgencyList"] as IEnumerable<ExternalAgency>;
+}
+
+<h2>Create Complaint</h2>
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+<div class="container">
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#works">How It Works?</button>
+</div>
+<br />
+
+<div class="modal fade" id="works" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 style="text-align:center; color:orange">4 Quick Steps</h3>
+                <h3 style="text-align:center; color:orange">For Your Voice To Be Heard</h3>
+            </div>
+            <div class="modal-body">
+                <img src="~/Images/view1.png" height="150" width="550" />
+                <br />
+            </div>
+            <div class="modal-footer" style="text-align:center">
+                <button style="border-color: orange" type="button" class="btn btn-default" data-dismiss="modal">Let's get started!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-success">
+    @ViewBag.Success
+</div>
+@Styles.Render("~/Content/complaint.css")
+@using (Html.BeginForm("Create", "Complaint", null, FormMethod.Post,
+                              new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(model => model.CategoryID, "CategoryID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.CategoryID, new SelectList(categoryList, "ID", "CategoryDescription"), htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", style = "width: 100%; max-width: 90%;", placeholder = "Title" } })
+                @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, 10, 40, htmlAttributes: new { @class = "form-control width500", style = "width: 100%; max-width: 90%;", placeholder = "Description" })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Attachment, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                <input id="ImagePath" title="Upload a product image"
+                       type="file" name="file" class="btn btn-primary" />
+                @*@Html.EditorFor(model => model.Attachment, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.Attachment, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @if (!HttpContext.Current.User.Identity.IsAuthenticated || UserSession.Role == null)
+        {
+            <div class="form-group">
+                <label class="control-label col-md-2">Name</label>
+
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PublicName, new { htmlAttributes = new { @class = "form-control", style = "width: 100%; max-width: 90%;", placeholder = "Name" } })
+                    @Html.ValidationMessageFor(model => model.PublicName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Email</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PublicEmail, new { htmlAttributes = new { @class = "form-control", style = "width: 100%; max-width: 90%;", placeholder = "Email" } })
+                    @Html.ValidationMessageFor(model => model.PublicEmail, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        }
+
+        <div class="form-group">
+            <div class="col-md-2">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+

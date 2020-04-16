@@ -1,0 +1,130 @@
+﻿@model ComplaintPortalSystem.Models.Complaint
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Complaint Details</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Attachment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attachment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSubmitted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateSubmitted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateClose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateClose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsRedFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsRedFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CentralUnitID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CentralUnitID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComplaintOwnerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComplaintOwnerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublicEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublicName)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RatingFeedback)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RatingFeedback)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExternalAgency.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExternalAgency.CompanyName)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class="btn btn-info"}) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class="btn btn-primary"})
+</p>

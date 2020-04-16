@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Dashboard Complaints portal" />
+  <DataSources>
+    <SqlDataSource Name="GetDashboard" ComponentName="sqlDataSource1">
+      <Connection Name="localhost_ComplaintPortalDB_Connection 1" FromAppConfig="true" />
+      <Query Type="StoredProcQuery" Name="GetDashboard">
+        <ProcName>GetDashboard</ProcName>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Complaint Received Over Time" DataSource="sqlDataSource1" DataMember="GetDashboard">
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <DataItems>
+        <Measure DataMember="ID" SummaryType="Count" DefaultId="DataItem0" />
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="Month" DefaultId="DataItem1" />
+        <Dimension DataMember="Role" DefaultId="DataItem2" />
+        <Dimension DataMember="Status" DefaultId="DataItem3" />
+        <Dimension DataMember="Role" DefaultId="DataItem4" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem4" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+        <Argument DefaultId="DataItem2" />
+        <Argument DefaultId="DataItem3" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY Title="Total Tickets" />
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem2" Name="Department Rating By Month" DataSource="sqlDataSource1" DataMember="GetDashboard" FilterString="[DataItem6] = 'CLOSED'">
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <DataItems>
+        <Measure DataMember="RatingEfficacy" SummaryType="Average" DefaultId="DataItem0" />
+        <Measure DataMember="RatingFriendliness" SummaryType="Average" DefaultId="DataItem1" />
+        <Measure DataMember="RatingSpeed" SummaryType="Average" DefaultId="DataItem2" />
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="Month" DefaultId="DataItem3" />
+        <Dimension DataMember="Role" DefaultId="DataItem4" />
+        <Dimension DataMember="Status" DefaultId="DataItem6" />
+      </DataItems>
+      <HiddenDimensions>
+        <Dimension DefaultId="DataItem6" />
+      </HiddenDimensions>
+      <Arguments>
+        <Argument DefaultId="DataItem3" />
+        <Argument DefaultId="DataItem4" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY Title="Ratings" />
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+            <Simple>
+              <Value DefaultId="DataItem1" />
+            </Simple>
+            <Simple>
+              <Value DefaultId="DataItem2" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="AVG Timetaken (In Day) Per Category" DataSource="sqlDataSource1" DataMember="GetDashboard" FilterString="[DataItem3] = 'CLOSED'">
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <DataItems>
+        <Measure DataMember="TimeTaken" SummaryType="Average" DefaultId="DataItem0" />
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="Month" DefaultId="DataItem1" />
+        <Dimension DataMember="Category" DefaultId="DataItem2" />
+        <Dimension DataMember="Status" DefaultId="DataItem3" />
+      </DataItems>
+      <HiddenDimensions>
+        <Dimension DefaultId="DataItem3" />
+      </HiddenDimensions>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+        <Argument DefaultId="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY Title="Timetaken" />
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <DateFilter ComponentName="dateFilterDashboardItem1" Name="Date Filter" DataSource="sqlDataSource1" DataMember="GetDashboard">
+      <DataItems>
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="MonthYear" DefaultId="DataItem0" />
+      </DataItems>
+      <Dimension DefaultId="DataItem0" />
+    </DateFilter>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutGroup Orientation="Vertical">
+        <LayoutItem DashboardItem="dateFilterDashboardItem1" />
+        <LayoutItem DashboardItem="chartDashboardItem1" />
+        <LayoutGroup>
+          <LayoutItem DashboardItem="chartDashboardItem2" />
+          <LayoutItem DashboardItem="chartDashboardItem3" />
+        </LayoutGroup>
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

@@ -1,0 +1,354 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+          body {
+    background-image: url("https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg");
+    background-size: 100% 100%;
+}
+
+.modal-login {
+    width: 550px;
+    height: 600px;
+    margin-bottom: 5vw;
+}
+
+    .modal-login, .modal-content {
+        margin-top: 2.5vw;
+        border-radius: 5px;
+        border: none;
+    }
+
+.modal-header {
+    background-color: #b81818;
+    color: white !important;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.modal-login .form-group {
+    margin-bottom: 35px;
+}
+
+.modal-login label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.modal-login .form-control {
+    min-height: 38px;
+    padding-left: 5px;
+    box-shadow: none !important;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    max-width: 100%;
+}
+
+    .modal-login .form-control:focus {
+        border-color: red;
+    }
+
+.modal-login .btn {
+    font-size: 15px;
+    font-weight: bold;
+    background: #b81818;
+    border-radius: 3px;
+    border: none;
+    min-width: 140px;
+    outline: none !important;
+    margin-top: 15px;
+}
+
+    .modal-login .btn:hover, .modal-login .btn:focus {
+        background: #a71111;
+    }
+
+
+.modal-login .hint-text {
+    text-align: right;
+    font-size: 13px;
+}
+
+.modal-login .input-group .input-group-addon {
+    background: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .modal-login .input-group .input-group-addon .fa-eye-slash {
+        background: white;
+    }
+
+
+.text-danger {
+    margin-left: 22vw;
+    margin-top: 30px;
+    background-color: transparent;
+    font-weight: 500 !important;
+    color: white !important;
+}
+
+
+
+@@media only screen and (max-width: 580px) {
+    .modal-login {
+        width: 350px;
+        margin-top: 7vw;
+    }
+
+
+
+    .text-danger {
+        margin-left: 3.5vw;
+    }
+
+}
+        @*body {
+            font-family: 'Varela Round', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .modal-login {
+            width: 580px;
+        }
+
+            .modal-login .modal-content {
+                padding: 20px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .modal-login .modal-header {
+                border-bottom: none;
+                position: relative;
+                justify-content: center;
+            }
+
+            .modal-login .close {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+            }
+
+            .modal-login h4 {
+                color: #636363;
+                text-align: center;
+                font-size: 26px;
+                margin-top: 0;
+            }
+
+            .modal-login .modal-content {
+                color: #999;
+                border-radius: 1px;
+                margin-bottom: 15px;
+                background: #fff;
+                border: 1px solid #f3f3f3;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                padding: 25px;
+                padding-top: 120px;
+                height: 600px;
+            }
+
+            .modal-login .form-group {
+                margin-bottom: 40px;
+            }
+
+            .modal-login label {
+                font-weight: normal;
+                font-size: 13px;
+            }
+
+            .modal-login .form-control {
+                min-height: 38px;
+                padding-left: 5px;
+                box-shadow: none !important;
+                border-width: 0 0 1px 0;
+                border-radius: 0;
+                max-width: 500px;
+            }
+
+                .modal-login .form-control:focus {
+                    border-color: #ccc;
+                }
+
+            .modal-login .input-group-addon {
+                max-width: 62px;
+                text-align: center;
+                background: none;
+                border-width: 0 0 1px 0;
+                padding-left: 5px;
+                border-radius: 0;
+            }
+
+            .modal-login .btn {
+                font-size: 16px;
+                font-weight: bold;
+                background: #19aa8d;
+                border-radius: 3px;
+                border: none;
+                min-width: 140px;
+                outline: none !important;
+            }
+
+                .modal-login .btn:hover, .modal-login .btn:focus {
+                    background: #179b81;
+                }
+
+            .modal-login .hint-text {
+                text-align: center;
+                padding-top: 5px;
+                font-size: 13px;
+            }
+
+            .modal-login .modal-footer {
+                color: #999;
+                border-color: #dee4e7;
+                text-align: center;
+                margin: 0 -25px -25px;
+                font-size: 13px;
+                justify-content: center;
+            }
+
+            .modal-login a {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+                .modal-login a:hover {
+                    text-decoration: none;
+                }
+
+            .modal-login a {
+                color: #19aa8d;
+                text-decoration: none;
+            }
+
+                .modal-login a:hover {
+                    text-decoration: underline;
+                }
+
+            .modal-login .fa {
+                font-size: 21px;
+            }
+
+        .trigger-btn {
+            display: inline-block;
+            margin: 100px auto;
+        }*@
+    </style>
+</head>
+
+
+<body>
+
+@*<h2>Login</h2>*@
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header" style="padding:15px 15px;">
+                    <h4><span class="glyphicon glyphicon-lock"></span> Sign in</h4>
+                </div>
+
+                <div class="modal-body" style="padding:30px 40px;">
+
+                    <div class="form-group">
+                        <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
+                        <input type="text" class="form-control" name="email" placeholder="Enter email" required="required">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-lock"></span> Password</label>
+                        <div class="input-group" id="show_hide_password">
+                            <input type="password" class="form-control" name="password" id="psw" placeholder="Enter password" required="required">
+                            <div class="input-group-addon">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg"><span class="glyphicon glyphicon-off"></span> Sign In</button>
+                    </div>
+                    @*<p onclick="location.href='@Url.Action("ForgotPassword", "ResetPassword")'" , htmlAttributes=new { class="hint-text" }>
+                            Forgot Password?
+                        </p>*@
+                    <p class="hint-text"><a href="@Url.Action("ForgotPassword", "ResetPassword")">Forgot Password?</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*<div class="form-horizontal">
+            <h4>Login</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    Email
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="email" name="email" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    Password
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="password" name="password" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Login" class="btn btn-default" />
+                </div>
+            </div>
+        </div>*@
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+            $("#show_hide_password a").on('click', function (event) {
+                event.preventDefault();
+                if ($('#show_hide_password input').attr("type") == "text") {
+                    $('#show_hide_password input').attr('type', 'password');
+                    $('#show_hide_password i').addClass("fa-eye-slash");
+                    $('#show_hide_password i').removeClass("fa-eye");
+                } else if ($('#show_hide_password input').attr("type") == "password") {
+                    $('#show_hide_password input').attr('type', 'text');
+                    $('#show_hide_password i').removeClass("fa-eye-slash");
+                    $('#show_hide_password i').addClass("fa-eye");
+                }
+            });
+        });
+    </script>
+
+
+}
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+﻿@using ComplaintPortalSystem.Common;
+<!DOCTYPE html>
+<html>
+
+<head>
+    @Html.DevExpress().GetStyleSheets(
+        new StyleSheet { ExtensionSuite = ExtensionSuite.NavigationAndLayout },
+        new StyleSheet { ExtensionSuite = ExtensionSuite.Editors },
+        new StyleSheet { ExtensionSuite = ExtensionSuite.Report },
+        new StyleSheet { ExtensionSuite = ExtensionSuite.Dashboard }
+    )
+    @Html.DevExpress().GetScripts(
+        new Script { ExtensionSuite = ExtensionSuite.NavigationAndLayout },
+        new Script { ExtensionSuite = ExtensionSuite.Editors },
+        new Script { ExtensionSuite = ExtensionSuite.Report },
+        new Script { ExtensionSuite = ExtensionSuite.Dashboard }
+    )
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Complaints Portal</title>
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/modernizr")
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+
+        .nav.navbar-nav li a {
+            color: #FFFFFF;
+        }
+
+        .nav.navbar-nav li a:hover {
+            color: #DC143C;
+        }
+
+        #topnav-right {
+            float: right;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="nav navbar-nav">
+                   <li> @Html.ActionLink("Murdoch Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    if (UserSession.Role != null)
+                    {
+                        if (UserSession.Role.ToString() == UserRole.ADMIN.ToString())
+                        {
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Register", "RegisterIndex", "Admin")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Import Data", "DataMigrateIndex", "Admin")</li>
+                            </ul>
+                        }
+                        else if (UserSession.Role.ToString() == UserRole.STAFF.ToString() || UserSession.Role.ToString() == UserRole.STUDENT.ToString())
+                        {
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Complaint", "Create", "Complaint")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("View Ticket", "Index", "ViewTicket")</li>
+                            </ul>
+                        }
+                        else if (UserSession.Role.ToString() == UserRole.CENTRAL_UNIT.ToString())
+                        {
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Triage", "Index", "Complaint")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Closed Tickets", "ClosedTickets", "Complaint")</li>
+                            </ul>
+                        }
+                        else if (UserSession.Role.ToString() == UserRole.SUPERVISOR.ToString())
+                        {
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Response", "Index", "SupervisorAssignment")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Dashboard", "DashboardViewer", "DashboardEditor")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Reporting", "GetReportComplaintReceivedOvertime", "Report")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Apply Leave", "ApplyLeave", "SupervisorAssignment", new { id = UserSession.UserId }, null)</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("View Closed Tickets", "ViewCloseTickets", "SupervisorAssignment")</li>
+                            </ul>
+
+                        }
+                        else if (UserSession.Role.ToString() == UserRole.COMPLAINT_HANDLER.ToString())
+                        {
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Response", "Index", "HandlerAssignment")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Apply Leave", "ApplyLeave", "HandlerAssignment", new { id = UserSession.UserId }, null)</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("View External Agency", "Index", "ExternalAgency")</li>
+                            </ul>
+
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("View Closed Tickets", "ViewCloseTickets", "HandlerAssignment")</li>
+                            </ul>
+                        }
+                        <ul class="nav navbar-nav">
+                            <li>
+                                @Html.ActionLink("Profile", "About", "Home", new { id = UserSession.UserId }, null)
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav" id="topnav-right">
+                            <li>@Html.ActionLink("Logout", "Logout", "Home")</li>
+                        </ul>
+                    }
+                    else
+                    {
+                        //Error here when user role still exist but not yet authenticated, can't show up complaint nav bar
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Complaint", "Create", "Complaint")</li>
+                        </ul>
+
+
+
+                        <ul class="nav navbar-nav" id="topnav-right">
+                            <li>@Html.ActionLink("Login", "Login", "Home")</li>
+                        </ul>
+                    }
+                }
+                else
+                {
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Complaint", "Create", "Complaint")</li>
+                    </ul>
+
+                    <ul class="nav navbar-nav" id="topnav-right">
+                        <li>@Html.ActionLink("Login", "Login", "Home")</li>
+                    </ul>
+                }
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2020 - Murdoch Complaints Portal</p>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

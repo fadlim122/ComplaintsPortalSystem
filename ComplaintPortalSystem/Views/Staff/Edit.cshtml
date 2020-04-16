@@ -1,0 +1,174 @@
+﻿@model ComplaintPortalSystem.Models.Staff
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bg {
+            z-index: 1;
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 90px;
+            width: 90%;
+            border-radius: 5px;
+            padding-top: 40px;
+        }
+
+            #bg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        #save {
+            background: #b81818;
+            color: #ffffff;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-left: 14vw;
+            margin-right: 10px;
+            border: none;
+            width: 85px;
+            border-radius: 3px;
+        }
+
+            #save:hover {
+                background: #a71111;
+            }
+
+            #save:focus,
+            #save:active {
+                background-color: #a71111;
+                border-color: transparent;
+            }
+
+
+        #btl {
+            background: #969292;
+            color: #ffffff;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border: none;
+            width: 110px;
+            border-radius: 3px;
+        }
+
+            #btl:hover {
+                background: #747373;
+            }
+
+        .text-danger {
+            padding: 0;
+            margin-left: 5vw;
+            margin-bottom: 17px;
+            background-color: transparent;
+            font-size: 90%;
+            font-weight: 500 !important;
+            color: red !important;
+        }
+
+        @@media only screen and (max-width: 580px) {
+            .text-danger {
+                font-size: 80%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <header>
+            <h2>Edit Staff Account</h2>
+        </header>
+        <hr style="border:0.6px solid #dbd9d9;" />
+
+
+
+        <div id="bg">
+            <div class="form-horizontal">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.ID)
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AccountHolder.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AccountHolder.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.AccountHolder.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.JobDesignation, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.JobDesignation, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.JobDesignation, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AccountHolder.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AccountHolder.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.AccountHolder.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AccountHolder.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AccountHolder.Password, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                        @Html.ValidationMessageFor(model => model.AccountHolder.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" id="save" />
+                    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary", id = "btl" })
+
+                </div>
+            </div>
+        </div>
+    }
+
+</body>
+</html>  

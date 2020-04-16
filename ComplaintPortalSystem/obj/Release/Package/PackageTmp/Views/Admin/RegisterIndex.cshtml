@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "RegisterIndex";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .btn {
+            padding: 30px;
+            margin: 20px;
+            font-size: x-large;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h2>Register Account</h2>
+    <div class="container">
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Admin", "Index", "Admin")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Student", "Index", "Student")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Staff", "Index", "Staff")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Central Unit", "Index", "CentralUnit")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Complaint Handler", "Index", "ComplaintHandler")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Supervisor", "Index", "Supervisor")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Department", "Index", "Department")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Category", "Index", "Category")</a>
+        <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("External Agency", "Index", "ExternalAgency")</a>
+    </div>
+
+</body>
+</html>
+

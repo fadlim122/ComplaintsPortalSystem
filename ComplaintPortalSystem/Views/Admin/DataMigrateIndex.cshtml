@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "DataMigrateIndex";
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bgimg {
+            z-index: 1;
+        }
+
+            #bgimg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .Row {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-spacing: 30px;
+        }
+
+        .Column {
+            display: table-cell;
+        }
+
+
+            .Column .btn-block {
+                text-align: center;
+                padding-top: 2.5vw;
+                width: 100%;
+                height: 7vw;
+                font-family: Verdana;
+                font-size: 1.1vw;
+                margin: 0;
+                border: none;
+                border-radius: 0;
+                background-color: #2d2d2d;
+                color: white;
+            }
+
+                .Column .btn-block:hover {
+                    color: red;
+                }
+
+                .Column .btn-block:focus, .btn-block:active {
+                    background-color: #2d2d2d;
+                }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Import Data to Database</h2>
+    </header>
+    <hr style="border:0.6px solid #dbd9d9;" />
+
+    <div id="bgimg">
+        <div class="Row">
+            <div class="Column">
+                <a class="btn btn-primary btn-lg btn-block" id="btn1" role="button" @Html.ActionLink("Account Holder", "Index", "ImportFile")</a>
+            </div>
+            <div class="Column">
+                <a class="btn btn-primary btn-lg btn-block" id="btn2" role="button" @Html.ActionLink("Category", "ImportCategory", "ImportFile")</a>
+            </div>
+            <div class="Column">
+                <a class="btn btn-primary btn-lg btn-block" id="btn3" role="button" @Html.ActionLink("Department", "ImportDepartment", "ImportFile")</a>
+            </div>
+        </div>
+    </div>
+    @*<div class="container">
+            <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Account Holder", "Index", "ImportFile")</a>
+            <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Category", "ImportCategory", "ImportFile")</a>
+            <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Department", "ImportDepartment", "ImportFile")</a>
+        </div>*@
+</body>
+</html>
+
+

@@ -1,0 +1,111 @@
+﻿@model IEnumerable<ComplaintPortalSystem.Models.HandlerAssignment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bg {
+            z-index: 1;
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 90px;
+        }
+
+            #bg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .table {
+            margin-top: 20px;
+        }
+
+        @@media only screen and (max-width: 1000px) {
+            #bg {
+                white-space: nowrap;
+                overflow: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Closed Tickets</h2>
+    </header>
+    <hr style="border:0.6px solid #dbd9d9;" />
+
+
+
+    <div id="bg">
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    Complaint ID
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Ticket Status
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Remark)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResponseDate)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ComplaintID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Complaint.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Complaint.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Remark)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ResponseDate)
+                    </td>
+                </tr>
+            }
+
+        </table>
+     </div>
+    </body>
+</html>
+

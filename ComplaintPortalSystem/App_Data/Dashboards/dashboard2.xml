@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="PAST Dashboard Complaints Portal" />
+  <DataSources>
+    <SqlDataSource Name="GetComplaintReceivedOverTime" ComponentName="sqlDataSource1">
+      <Connection Name="localhost_ComplaintPortalDB_Connection 1" FromAppConfig="true" />
+      <Query Type="StoredProcQuery" Name="GetComplaintReceivedOverTime">
+        <ProcName>GetComplaintReceivedOverTime</ProcName>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+    <SqlDataSource Name="GetDepartmentRating" ComponentName="sqlDataSource2">
+      <Connection Name="localhost_ComplaintPortalDB_Connection 1" FromAppConfig="true" />
+      <Query Type="StoredProcQuery" Name="GetDepartmentRating">
+        <ProcName>GetDepartmentRating</ProcName>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+    <SqlDataSource Name="GetTimeTakenByCategory" ComponentName="sqlDataSource3">
+      <Connection Name="localhost_ComplaintPortalDB_Connection 1" FromAppConfig="true" />
+      <Query Type="StoredProcQuery" Name="GetTimeTakenByCategory">
+        <ProcName>GetTimeTakenByCategory</ProcName>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+    <SqlDataSource Name="GetTimeTakenByCategory 1" ComponentName="sqlDataSource4">
+      <Connection Name="localhost_ComplaintPortalDB_Connection 1" FromAppConfig="true" />
+      <Query Type="StoredProcQuery" Name="GetTimeTakenByCategory">
+        <ProcName>GetTimeTakenByCategory</ProcName>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Parameters>
+    <Parameter Name="Date" Type="System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AllowNull="true" />
+  </Parameters>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Complaint Received Over Time" DataSource="sqlDataSource1" DataMember="GetComplaintReceivedOverTime" IsMasterFilterCrossDataSource="true">
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <DataItems>
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="Month" DefaultId="DataItem0" />
+        <Dimension DataMember="Role" DefaultId="DataItem1" />
+        <Dimension DataMember="Status" DefaultId="DataItem2" />
+        <Measure DataMember="ID" SummaryType="Count" DefaultId="DataItem4" />
+        <Dimension DataMember="Role" DefaultId="DataItem3" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+        <Argument DefaultId="DataItem1" />
+        <Argument DefaultId="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY Title="Total Tickets" />
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem4" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem2" Name="Department Rating By Month" DataSource="sqlDataSource2" DataMember="GetDepartmentRating" IsMasterFilterCrossDataSource="true">
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <DataItems>
+        <Dimension DataMember="Department_Name" DefaultId="DataItem0" />
+        <Measure DataMember="RatingEfficacy" SummaryType="Average" DefaultId="DataItem1" />
+        <Measure DataMember="RatingFriendliness" SummaryType="Average" DefaultId="DataItem2" />
+        <Measure DataMember="RatingSpeed" SummaryType="Average" DefaultId="DataItem3" />
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="Month" DefaultId="DataItem5" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem5" />
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem1" />
+            </Simple>
+            <Simple>
+              <Value DefaultId="DataItem2" />
+            </Simple>
+            <Simple>
+              <Value DefaultId="DataItem3" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="AVG Timetaken (In Day) Per Category" DataSource="sqlDataSource4" DataMember="GetTimeTakenByCategory" IsMasterFilterCrossDataSource="true">
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <DataItems>
+        <Measure DataMember="TimeTaken" SummaryType="Average" DefaultId="DataItem0" />
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="Month" DefaultId="DataItem1" />
+        <Dimension DataMember="Category" DefaultId="DataItem2" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+        <Argument DefaultId="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <DateFilter ComponentName="dateFilterDashboardItem1" Name="Date Filter Complaint Received Over Time" DataSource="sqlDataSource1" DataMember="GetComplaintReceivedOverTime">
+      <DataItems>
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="MonthYear" DefaultId="DataItem0" />
+      </DataItems>
+      <Dimension DefaultId="DataItem0" />
+    </DateFilter>
+    <DateFilter ComponentName="dateFilterDashboardItem2" Name="Date Filter Department Rating By Month" DataSource="sqlDataSource2" DataMember="GetDepartmentRating">
+      <DataItems>
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="MonthYear" DefaultId="DataItem0" />
+      </DataItems>
+      <Dimension DefaultId="DataItem0" />
+    </DateFilter>
+    <DateFilter ComponentName="dateFilterDashboardItem3" Name="Date Filter AVG Timetaken (In Day) Per Category" DataSource="sqlDataSource4" DataMember="GetTimeTakenByCategory">
+      <DataItems>
+        <Dimension DataMember="DateSubmitted" DateTimeGroupInterval="MonthYear" DefaultId="DataItem0" />
+      </DataItems>
+      <Dimension DefaultId="DataItem0" />
+    </DateFilter>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="0.67014186497114392">
+        <LayoutItem DashboardItem="dateFilterDashboardItem1" Weight="0.62104452998111725" />
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="1.3347084691082944" />
+      </LayoutGroup>
+      <LayoutGroup Weight="1.3298581350288561">
+        <LayoutGroup Orientation="Vertical">
+          <LayoutGroup Weight="1.2128001679736802">
+            <LayoutItem DashboardItem="dateFilterDashboardItem2" Weight="0.63583961363946173" />
+            <LayoutItem DashboardItem="chartDashboardItem2" Weight="1.3641603863605383" />
+          </LayoutGroup>
+          <LayoutGroup Weight="1.2651045315956861">
+            <LayoutItem DashboardItem="dateFilterDashboardItem3" Weight="0.78453742746808108" />
+            <LayoutItem DashboardItem="chartDashboardItem3" Weight="1.6933672721012854" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

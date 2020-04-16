@@ -1,0 +1,1036 @@
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll.config
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.pdb
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe.config
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.rsp
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe.config
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.rsp
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.AppContext.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Console.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Http.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Sockets.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.ValueTuple.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe.config
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.rsp
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\WebGrease.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.pdb
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.CopyComplete
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.dll
+C:\Users\admin\source\repos\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.pdb
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll.config
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.pdb
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe.config
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.rsp
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe.config
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.rsp
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.AppContext.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Console.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Globalization.Calendars.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Http.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Sockets.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.ValueTuple.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe.config
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.rsp
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Charts.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.CodeParser.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Data.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.DataAccess.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Office.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Pdf.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.PivotGrid.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Printing.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Export.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Sparkline.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxThemes.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Mvc5.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Resources.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Xpo.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.WebForms.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\EPPlus.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\WebGrease.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Images.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxHtmlEditor.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.Web.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxGantt.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxTreeList.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpellChecker.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxPivotGrid.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxRichEdit.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxScheduler.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraScheduler.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.SpellChecker.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpreadsheet.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Spreadsheet.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Data.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.DataAccess.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Office.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Pdf.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.PivotGrid.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Printing.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Sparkline.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Mvc5.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Xpo.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.WebForms.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\EPPlus.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.pdb
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.pdb
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.pdb
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxHtmlEditor.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.Web.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxGantt.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxTreeList.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpellChecker.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxPivotGrid.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxRichEdit.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxScheduler.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraScheduler.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.SpellChecker.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpreadsheet.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Spreadsheet.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csprojAssemblyReference.cache
+D:\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.Reports.ComplaintReceivedOverTime.resources
+D:\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.GenerateResource.cache
+D:\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.dll.licenses
+D:\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.CopyComplete
+D:\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.pdb
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Utils.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeMap.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraMap.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Win.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.TreeMap.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Map.v19.2.Core.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Presets.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraEditors.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraPrinting.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraLayout.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraBars.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeList.v19.2.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Utils.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeMap.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraMap.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Win.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.TreeMap.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Map.v19.2.Core.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Presets.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraEditors.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraPrinting.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraLayout.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraBars.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeList.v19.2.xml
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.Reports.ComplaintReceivedOverTime.resources
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.GenerateResource.cache
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.dll.licenses
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.pdb
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll.config
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.pdb
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe.config
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.rsp
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe.config
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.rsp
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.AppContext.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Console.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Globalization.Calendars.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Http.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Sockets.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.ValueTuple.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe.config
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.rsp
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Charts.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.CodeParser.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Data.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.DataAccess.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Office.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Pdf.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.PivotGrid.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Printing.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Export.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Sparkline.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxThemes.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Mvc5.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Resources.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Xpo.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.WebForms.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\EPPlus.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\WebGrease.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Utils.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeMap.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraMap.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Win.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.TreeMap.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Map.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Presets.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Images.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxHtmlEditor.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.Web.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxGantt.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxTreeList.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpellChecker.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxPivotGrid.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxRichEdit.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxScheduler.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraScheduler.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.SpellChecker.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpreadsheet.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Spreadsheet.v19.2.Core.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraEditors.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraPrinting.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraLayout.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraBars.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeList.v19.2.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Data.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.DataAccess.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Office.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Pdf.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.PivotGrid.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Printing.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Sparkline.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Mvc5.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Xpo.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.WebForms.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\EPPlus.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.pdb
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.pdb
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.pdb
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Utils.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeMap.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraMap.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Win.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.TreeMap.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Map.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Presets.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxHtmlEditor.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.Web.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxGantt.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxTreeList.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpellChecker.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxPivotGrid.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxRichEdit.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxScheduler.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraScheduler.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.SpellChecker.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpreadsheet.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Spreadsheet.v19.2.Core.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraEditors.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraPrinting.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraLayout.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraBars.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeList.v19.2.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Data.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.DataAccess.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Office.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Printing.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.Resources.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Xpo.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraCharts.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraReports.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Utils.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Map.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraEditors.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraLayout.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraBars.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.CopyComplete
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.Dashboard.Dashboard1.resources
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.Mvc5.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.WebForms.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.Mvc5.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.WebForms.xml
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.Dashboard.ComplaintByStatus.resources
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.CoreCompileInputs.cache
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\GetComplaintReport.resources
+D:\ComplaintsPortalSystem2\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csprojAssemblyReference.cache
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll.config
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ComplaintPortalSystem.pdb
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.exe.config
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csc.rsp
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.exe.config
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\csi.rsp
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.AppContext.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Console.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Globalization.Calendars.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Http.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Net.Sockets.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.ValueTuple.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.exe.config
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\vbc.rsp
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Charts.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.CodeParser.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.Mvc5.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.WebForms.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Data.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.DataAccess.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Map.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Office.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Pdf.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.PivotGrid.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Printing.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Export.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Sparkline.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.TreeMap.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Utils.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxThemes.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Mvc5.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Resources.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Xpo.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraEditors.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Presets.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Win.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraMap.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraPrinting.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.WebForms.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeMap.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\EPPlus.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\WebGrease.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Images.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxHtmlEditor.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.Web.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxGantt.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxTreeList.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpellChecker.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxPivotGrid.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxRichEdit.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxScheduler.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraScheduler.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.SpellChecker.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpreadsheet.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Spreadsheet.v19.2.Core.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraLayout.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraBars.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeList.v19.2.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.Mvc5.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Dashboard.v19.2.Web.WebForms.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Data.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.DataAccess.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Map.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Office.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Pdf.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.PivotGrid.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Printing.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.RichEdit.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Sparkline.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.TreeMap.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Utils.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.Mvc5.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Xpo.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraEditors.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Presets.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraGauges.v19.2.Win.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraMap.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraPrinting.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraReports.v19.2.Web.WebForms.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeMap.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\EntityFramework.SqlServer.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\EPPlus.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Helpers.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Mvc.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Optimization.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.Razor.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Deployment.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\System.Web.WebPages.Razor.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Newtonsoft.Json.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.pdb
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.Reporting.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.pdb
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Telerik.ReportViewer.WebForms.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Antlr3.Runtime.pdb
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxHtmlEditor.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraCharts.v19.2.Web.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxGantt.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxTreeList.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpellChecker.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxPivotGrid.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxRichEdit.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxScheduler.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraScheduler.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.SpellChecker.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Web.ASPxSpreadsheet.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.Spreadsheet.v19.2.Core.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraLayout.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraBars.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\DevExpress.XtraTreeList.v19.2.xml
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Dashboard.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Dashboard.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Data.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Data.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Data.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Data.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.DataAccess.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.DataAccess.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.DataAccess.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.DataAccess.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Map.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Map.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Map.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Map.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Office.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Office.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Office.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Office.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.PivotGrid.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Printing.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Printing.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Printing.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Printing.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.RichEdit.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Utils.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Utils.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Utils.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Utils.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.Resources.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.Resources.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.Resources.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.Resources.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Xpo.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Xpo.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Xpo.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Xpo.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraCharts.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraCharts.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraCharts.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraCharts.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraEditors.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraEditors.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraEditors.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraEditors.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraGauges.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraGauges.v19.2.Presets.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraPrinting.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraReports.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraReports.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraReports.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraReports.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraReports.v19.2.Web.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxHtmlEditor.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxSpellChecker.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxRichEdit.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxScheduler.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Web.ASPxSpreadsheet.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.Spreadsheet.v19.2.Core.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraLayout.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraLayout.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraLayout.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraLayout.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraBars.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraBars.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraBars.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraBars.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\de\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\es\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ja\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\bin\ru\DevExpress.XtraTreeList.v19.2.resources.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.Dashboard.ComplaintByStatus.resources
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.Dashboard.Dashboard1.resources
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.Reports.ComplaintReceivedOverTime.resources
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\GetComplaintReport.resources
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.GenerateResource.cache
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.dll.licenses
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.CoreCompileInputs.cache
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csproj.CopyComplete
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.dll
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.pdb
+D:\Final ComplaintPortalSystem\ComplaintPortalSystem\ComplaintPortalSystem\obj\Debug\ComplaintPortalSystem.csprojAssemblyReference.cache

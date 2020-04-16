@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="New Dashboard" />
+  <DataSources>
+    <SqlDataSource Name="Department" ComponentName="sqlDataSource1">
+      <Connection Name="localhost_ComplaintPortalDB_Connection 1" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="Department">
+        <Tables>
+          <Table Name="Department" />
+          <Table Name="ComplaintHandler" />
+          <Table Name="Supervisor" />
+          <Table Name="Complaint" />
+          <Table Name="HandlerAssignment" />
+          <Table Name="SupervisorAssignment" />
+          <Relation Type="Inner" Parent="ComplaintHandler" Nested="Department">
+            <KeyColumn Parent="DepartmentID" Nested="ID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Department" Nested="Supervisor">
+            <KeyColumn Parent="ID" Nested="DepartmentID" />
+          </Relation>
+          <Relation Type="Inner" Parent="ComplaintHandler" Nested="Supervisor">
+            <KeyColumn Parent="SupervisorID" Nested="ID" />
+          </Relation>
+          <Relation Type="Inner" Parent="HandlerAssignment" Nested="ComplaintHandler">
+            <KeyColumn Parent="HandlerID" Nested="ID" />
+          </Relation>
+          <Relation Type="Inner" Parent="HandlerAssignment" Nested="Complaint">
+            <KeyColumn Parent="ComplaintID" Nested="ID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Supervisor" Nested="SupervisorAssignment">
+            <KeyColumn Parent="ID" Nested="SupervisorID" />
+          </Relation>
+          <Relation Type="Inner" Parent="SupervisorAssignment" Nested="Complaint">
+            <KeyColumn Parent="ComplaintID" Nested="ID" />
+          </Relation>
+        </Tables>
+        <Columns>
+          <Column Table="Department" Name="ID" Alias="Department_ID" />
+          <Column Table="Department" Name="Name" />
+          <Column Table="Department" Name="HODName" />
+          <Column Table="Department" Name="HODEmail" />
+          <Column Table="ComplaintHandler" Name="ID" Alias="ComplaintHandler_ID" />
+          <Column Table="ComplaintHandler" Name="DepartmentID" />
+          <Column Table="ComplaintHandler" Name="SupervisorID" />
+          <Column Table="ComplaintHandler" Name="StartDate" />
+          <Column Table="ComplaintHandler" Name="EndDate" />
+          <Column Table="Supervisor" Name="ID" Alias="Supervisor_ID" />
+          <Column Table="Supervisor" Name="DepartmentID" Alias="Supervisor_DepartmentID" />
+          <Column Table="Supervisor" Name="StartDate" Alias="Supervisor_StartDate" />
+          <Column Table="Supervisor" Name="EndDate" Alias="Supervisor_EndDate" />
+          <Column Table="Complaint" Name="ID" />
+          <Column Table="Complaint" Name="Title" />
+          <Column Table="Complaint" Name="Attachment" />
+          <Column Table="Complaint" Name="Description" />
+          <Column Table="Complaint" Name="Status" />
+          <Column Table="Complaint" Name="DateSubmitted" />
+          <Column Table="Complaint" Name="DateClose" />
+          <Column Table="Complaint" Name="IsRedFlag" />
+          <Column Table="Complaint" Name="RatingEfficacy" />
+          <Column Table="Complaint" Name="RatingSpeed" />
+          <Column Table="Complaint" Name="RatingFriendliness" />
+          <Column Table="Complaint" Name="RatingFeedback" />
+          <Column Table="Complaint" Name="CentralUnitID" />
+          <Column Table="Complaint" Name="ComplaintOwnerID" />
+          <Column Table="Complaint" Name="PublicEmail" />
+          <Column Table="Complaint" Name="PublicName" />
+          <Column Table="Complaint" Name="CategoryID" />
+          <Column Table="Complaint" Name="ExternalAgencyID" />
+          <Column Table="SupervisorAssignment" Name="SupervisorID" Alias="SupervisorAssignment_SupervisorID" />
+          <Column Table="SupervisorAssignment" Name="ComplaintID" />
+          <Column Table="SupervisorAssignment" Name="Status" Alias="SupervisorAssignment_Status" />
+          <Column Table="SupervisorAssignment" Name="Remark" />
+          <Column Table="SupervisorAssignment" Name="ResponseDate" />
+          <Column Table="HandlerAssignment" Name="HandlerID" />
+          <Column Table="HandlerAssignment" Name="ComplaintID" Alias="HandlerAssignment_ComplaintID" />
+          <Column Table="HandlerAssignment" Name="Status" Alias="HandlerAssignment_Status" />
+          <Column Table="HandlerAssignment" Name="Remark" Alias="HandlerAssignment_Remark" />
+          <Column Table="HandlerAssignment" Name="ResponseDate" Alias="HandlerAssignment_ResponseDate" />
+        </Columns>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="sqlDataSource1" DataMember="Department">
+      <DataItems>
+        <Measure DataMember="ID" SummaryType="Count" DefaultId="DataItem0" />
+        <Dimension DataMember="Status" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem2" Name="Chart 2" DataSource="sqlDataSource1" DataMember="Department">
+      <DataItems>
+        <Measure DataMember="ID" DefaultId="DataItem0" />
+        <Dimension DataMember="Status" DefaultId="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem1" />
+      </SeriesDimensions>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="Chart 3" DataSource="sqlDataSource1" DataMember="Department">
+      <Panes>
+        <Pane Name="Pane 1" />
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem4" Name="Chart 4" DataSource="sqlDataSource1" DataMember="Department">
+      <Panes>
+        <Pane Name="Pane 1" />
+      </Panes>
+    </Chart>
+  </Items>
+  <ColorScheme>
+    <Entry DataSource="sqlDataSource1" DataMember="Department" Color="-13314343">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Status" />
+          <Value Type="System.String" Value="REOPEN" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="Department" Color="-1237988">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Status" />
+          <Value Type="System.String" Value="PENDING" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+  </ColorScheme>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutGroup Orientation="Vertical">
+        <LayoutItem DashboardItem="chartDashboardItem1" />
+        <LayoutItem DashboardItem="chartDashboardItem3" />
+      </LayoutGroup>
+      <LayoutGroup Orientation="Vertical">
+        <LayoutItem DashboardItem="chartDashboardItem2" />
+        <LayoutItem DashboardItem="chartDashboardItem4" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

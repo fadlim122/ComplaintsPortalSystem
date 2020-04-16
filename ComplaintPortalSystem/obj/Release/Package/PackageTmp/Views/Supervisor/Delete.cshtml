@@ -1,0 +1,45 @@
+﻿@model ComplaintPortalSystem.Models.Supervisor
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete Supervisor</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountHolder.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountHolder.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountHolder.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountHolder.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class="btn btn-primary"})
+        </div>
+    }
+</div>

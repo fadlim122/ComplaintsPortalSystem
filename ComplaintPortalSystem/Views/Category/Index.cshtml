@@ -1,0 +1,166 @@
+﻿@model IEnumerable<ComplaintPortalSystem.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bg {
+            z-index: 1;
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 90px;
+        }
+
+            #bg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        #add {
+            margin-bottom: 25px;
+            background-color: #f2f3f3;
+            color: #1367c5;
+            border: none;
+            padding: 10px;
+            font-weight: 500;
+            font-family: Verdana;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+            #add:hover {
+                background-color: #4a8edb;
+                color: #e7e7e7;
+            }
+
+        #edit, #details, #delete {
+            margin-right: 10px;
+        }
+
+        #edit {
+            background-color: #f1f2f2;
+            color: #37a30b;
+            border: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: 500;
+            font-family: Verdana;
+            font-size: 12.8px;
+        }
+
+            #edit:hover {
+                background-color: #6cbd4c;
+                color: #e7e7e7;
+            }
+
+        #details {
+            background-color: #f1f2f2;
+            color: #0da5ba;
+            border: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: 500;
+            font-family: Verdana;
+            font-size: 12.8px;
+        }
+
+            #details:hover {
+                background-color: #41b1c1;
+                color: #e7e7e7;
+            }
+
+        #delete {
+            background-color: #f1f2f2;
+            color: #c13737;
+            border: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: 500;
+            font-family: Verdana;
+            font-size: 12.8px;
+        }
+
+            #delete:hover {
+                background-color: #d84646;
+                color: #e7e7e7;
+            }
+
+        @@media only screen and (max-width: 1000px) {
+            #bg {
+                white-space: nowrap;
+                overflow: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Manage Complaint Category</h2>
+    </header>
+    <hr style="border:0.6px solid #dbd9d9;" />
+
+
+
+    <div id="bg">
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <p>
+            <button type="button" id="add" class="btn btn-primary" onclick="location.href='@Url.Action("Create")'"><i class="glyphicon glyphicon-plus-sign"></i> Add New Category</button>
+        </p>
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CategoryDescription)
+                </th>
+                <th>Action</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryDescription)
+                    </td>
+                    <td>
+                        <button type="button" id="edit" class="btn btn-primary" onclick="location.href='@Url.Action("Edit", new { id=item.ID })'"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
+                        <button type="button" id="details" class="btn btn-primary" onclick="location.href='@Url.Action("Details", new { id=item.ID })'"><i class="glyphicon glyphicon-info-sign"></i> Details</button>
+                        <button type="button" id="delete" class="btn btn-primary" onclick="location.href='@Url.Action("Delete", new { id=item.ID })'"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>
+</html>

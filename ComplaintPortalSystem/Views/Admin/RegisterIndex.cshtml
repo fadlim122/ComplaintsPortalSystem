@@ -1,0 +1,190 @@
+﻿@{
+    ViewData["Title"] = "RegisterIndex";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bgimg {
+            z-index: 1;
+        }
+
+            #bgimg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .Row1, .Row2 {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-spacing: 20px;
+            margin-bottom: 60px;
+        }
+
+        .Column {
+            display: table-cell;
+        }
+
+            .Column img {
+                padding: 0;
+                width: 100%;
+                height: 140px;
+            }
+
+            .Column .btn-block {
+                padding-top: 12.5px;
+                width: 100%;
+                height: 50px;
+                font-family: Verdana;
+                font-size: 0.9vw;
+                margin: 0;
+                border: none;
+                border-radius: 0;
+                background-color: #2d2d2d;
+                color: white;
+            }
+
+                .Column .btn-block:hover {
+                    color: red;
+                }
+
+                .Column .btn-block:focus, .Column .btn-block:active {
+                    background-color: #2d2d2d;
+                }
+
+                #img7, #img8, #img9 {
+                    padding: 0;
+                    width: 100%;
+                    height: 140px;
+                }
+
+        #btn7, #btn8, #btn9 {
+            padding-top: 12.5px;
+            font-size: 0.9vw;
+            width: 100%;
+            height: 50px;
+        }
+
+        @@media screen and (max-width: 600px) {
+
+            .Row1, .Row2 {
+                margin-bottom: 30px;
+                border-spacing: 0;
+            }
+
+            .Column .btn-block {
+                font-size: 1.5vw;
+                font-weight: bold;
+                width: 15vw;
+                height: 40px;
+            }
+
+            #btn7, #btn8, #btn9 {
+                font-size: 1.3vw;
+                font-weight: bold;
+                width: 15vw;
+                height: 40px;
+                margin-left: 10px;
+                padding-left: 7.5px;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Registration & Management</h2>
+    </header>
+    <hr style="border:0.6px solid #dbd9d9;" />
+
+    <div id="bgimg">
+        <div class="Row1">
+            <div class="Column">
+                <img src="https://www.seekpng.com/png/detail/263-2636012_database-administration-database-administration-icon-png.png" alt="Admin">
+                <a class="btn btn-primary btn-lg btn-block" id="btn1" role="button" @Html.ActionLink("Admin", "Index", "Admin")</a>
+            </div>
+            <div class="Column">
+                <img src="https://www.pngkey.com/png/detail/126-1269278_add-student-icon-png-groups-first-baptist-cleveland.png" alt="Student">
+                <a class="btn btn-primary btn-lg btn-block" id="btn2" role="button" @Html.ActionLink("Student", "Index", "Student")</a>
+            </div>
+            <div class="Column">
+                <img src="https://www.pngitem.com/pimgs/m/226-2261312_employee-clipart-employee-icon-employee-management-system-logo.png" alt="Staff">
+                <a class="btn btn-primary btn-lg btn-block" id="btn3" role="button" @Html.ActionLink("Staff", "Index", "Staff")</a>
+            </div>
+            <div class="Column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9TsJ_HgJxqioWC_7sVuaCiWMnG3jWc8XL8xSvMf_9EP8AyRKP" alt="CentralUnit">
+                <a class="btn btn-primary btn-lg btn-block" id="btn4" role="button" @Html.ActionLink("Central Unit", "Index", "CentralUnit")</a>
+            </div>
+            <div class="Column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJRUZKGYEDRyJoj8ObhCzDpZ75dAAPz5O6XHKlSwpmAUTp0bS4" alt="ComplaintHandler">
+                <a class="btn btn-primary btn-lg btn-block" id="btn5" role="button" @Html.ActionLink("Handler", "Index", "ComplaintHandler")</a>
+            </div>
+            <div class="Column">
+                <img src="https://www.pngkit.com/png/detail/263-2636038_system-administration-system-administration-icon.png" alt="Supervisor">
+                <a class="btn btn-primary btn-lg btn-block" id="btn6" role="button" @Html.ActionLink("Supervisor", "Index", "Supervisor")</a>
+            </div>
+        </div>
+
+        <hr style="border:0.2px solid #dbd9d9;" />
+
+        <div class="Row2">
+            <div class="Column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqRQsHiTmzsyl-Q3Su0yp_1bO4sqZf__DQd5_PiqHXn57-d-Gj" alt="Department" id="img7">
+                <a class="btn btn-primary btn-lg btn-block" id="btn7" role="button" @Html.ActionLink("Department", "Index", "Department")</a>
+            </div>
+            <div class="Column">
+                <img src="https://www.iconbunny.com/icons/media/catalog/product/6/3/636.8-checklist-icon-iconbunny.jpg" alt="Category" id="img8">
+                <a class="btn btn-primary btn-lg btn-block" id="btn8" role="button" @Html.ActionLink("Category", "Index", "Category")</a>
+            </div>
+            <div class="Column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqRQsHiTmzsyl-Q3Su0yp_1bO4sqZf__DQd5_PiqHXn57-d-Gj" alt="ExternalAgency" id="img9">
+                <a class="btn btn-primary btn-lg btn-block" id="btn9" role="button" @Html.ActionLink("External Agency", "Index", "ExternalAgency")</a>
+            </div>
+            <div class="Column"></div>
+            <div class="Column"></div>
+            <div class="Column"></div>
+        </div>
+
+        @*<div class="container">
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Admin", "Index", "Admin")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Student", "Index", "Student")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Staff", "Index", "Staff")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Central Unit", "Index", "CentralUnit")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Complaint Handler", "Index", "ComplaintHandler")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Supervisor", "Index", "Supervisor")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Department", "Index", "Department")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("Category", "Index", "Category")</a>
+                <a class="btn btn-primary btn-lg btn-block" id="btn" role="button" @Html.ActionLink("External Agency", "Index", "ExternalAgency")</a>
+            </div>*@
+    </div>
+</body>
+</html>
+

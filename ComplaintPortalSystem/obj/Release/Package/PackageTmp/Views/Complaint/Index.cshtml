@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ComplaintPortalSystem.Models.Complaint>
+@using ComplaintPortalSystem.Models
+@using ComplaintPortalSystem.Common
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tickets</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            Role
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateSubmitted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateClose)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsRedFlag)
+        </th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Title)
+    </td>
+    <td>
+        @if (item.ComplaintOwnerID == null)
+        {
+            if (item.PublicEmail == null && item.PublicName == null)
+            {
+                @("ANONYMOUS");
+            }
+            else
+            {
+                @("PUBLIC");
+            }
+        }
+        else
+        {
+            @Html.DisplayFor(modelItem => item.AccountHolder.Role)
+        }
+
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DateSubmitted)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DateClose)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsRedFlag)
+    </td>
+    <td>
+        @Html.ActionLink("Manage", "Allocate", new { id = item.ID }, new { @class = "btn btn-primary" })
+    </td>
+</tr>
+    }
+
+</table>

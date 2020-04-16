@@ -1,0 +1,149 @@
+﻿@using ComplaintPortalSystem.Common;
+@using ComplaintPortalSystem.Models;
+@model ComplaintPortalSystem.Models.AccountHolder
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @*<meta name="viewport" content="width=device-width, initial-scale=1">
+        @Styles.Render("~/Content/main.css")*@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        .title {
+            color: black;
+            text-align: center;
+        }
+
+        .fa {
+            padding: 15px;
+            font-size: 25px;
+            width: 55px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .icon {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+            padding: 30px;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Welcome to Murdoch Complaints Portal</h1>
+    </div>
+
+    
+    <div>
+        @if (HttpContext.Current.User.Identity.IsAuthenticated)
+        {
+            if (UserSession.Role != null)
+            {
+                <h3 style="color:lightseagreen; text-align:center">Welcome back @Html.DisplayFor(model => model.Name), It's great to see you again, Hope you are well</h3>
+            }
+        }
+    </div>
+    <div class="modal" id="welcomeModalPopup" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" style="text-align:center">Announcement</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>
+                                Hello @Html.DisplayFor(model => model.Name), You have made a difference to "@ViewData["THIS_WEEK_CLOSED_CASE"]" people this week,
+                                "@ViewData["THIS_MONTH_CLOSED_CASE"]" people this month. To Date, You have helped "@ViewData["TOTAL_CLOSED_CASE"]" people
+                            </h4>
+                            <h4>Your actions will also make a difference in the "@ViewData["TOTAL_OPEN_CASE"]" new tickets you are working on today.</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>A Noble Spirit Embiggens the Smallest Man</h5>
+                            <img src="~/Images/capture1.jpg" height="150" width="200" />
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="icon">
+        <h4 class="find">Find us on</h4>
+        <a href="https://www.facebook.com/MurdochUniversity/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/murdochuniversity/?hl=en" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/school/murdoch-university/" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/MurdochUni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+    </div>
+
+
+    @if (HttpContext.Current.User.Identity.IsAuthenticated)
+    {
+        if (UserSession.Role != null)
+        {
+            if (UserSession.Role == UserRole.COMPLAINT_HANDLER.ToString())
+            {
+                if (Convert.ToInt32(ViewData["LoginCount"]) == 1)
+                {
+                    <script>
+                        $('#welcomeModalPopup').modal('show')
+                    </script>
+                }
+            }
+        }
+    }
+
+</body>
+</html>
+
+
+
+

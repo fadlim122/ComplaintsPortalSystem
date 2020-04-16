@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ComplaintPortalDBModelStoreContainer" CdmEntityContainer="ComplaintPortalDBEntities">
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="Major" ColumnName="Major" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountHolders">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.AccountHolder">
+        <MappingFragment StoreEntitySet="AccountHolder">
+          <ScalarProperty Name="ResetPasswordCode" ColumnName="ResetPasswordCode" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComplaintHandlers">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.ComplaintHandler">
+        <MappingFragment StoreEntitySet="ComplaintHandler">
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="SupervisorID" ColumnName="SupervisorID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supervisors">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.Supervisor">
+        <MappingFragment StoreEntitySet="Supervisor">
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="HODEmail" ColumnName="HODEmail" />
+          <ScalarProperty Name="HODName" ColumnName="HODName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Complaints">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.Complaint">
+        <MappingFragment StoreEntitySet="Complaint">
+          <ScalarProperty Name="RatingFriendliness" ColumnName="RatingFriendliness" />
+          <ScalarProperty Name="RatingSpeed" ColumnName="RatingSpeed" />
+          <ScalarProperty Name="RatingEfficacy" ColumnName="RatingEfficacy" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="RatingFeedback" ColumnName="RatingFeedback" />
+          <ScalarProperty Name="ExternalAgencyID" ColumnName="ExternalAgencyID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="PublicName" ColumnName="PublicName" />
+          <ScalarProperty Name="PublicEmail" ColumnName="PublicEmail" />
+          <ScalarProperty Name="ComplaintOwnerID" ColumnName="ComplaintOwnerID" />
+          <ScalarProperty Name="CentralUnitID" ColumnName="CentralUnitID" />
+          <ScalarProperty Name="IsRedFlag" ColumnName="IsRedFlag" />
+          <ScalarProperty Name="DateClose" ColumnName="DateClose" />
+          <ScalarProperty Name="DateSubmitted" ColumnName="DateSubmitted" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExternalAgencies">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.ExternalAgency">
+        <MappingFragment StoreEntitySet="ExternalAgency">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HandlerAssignments">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.HandlerAssignment">
+        <MappingFragment StoreEntitySet="HandlerAssignment">
+          <ScalarProperty Name="ResponseDate" ColumnName="ResponseDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComplaintID" ColumnName="ComplaintID" />
+          <ScalarProperty Name="HandlerID" ColumnName="HandlerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupervisorAssignments">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.SupervisorAssignment">
+        <MappingFragment StoreEntitySet="SupervisorAssignment">
+          <ScalarProperty Name="ResponseDate" ColumnName="ResponseDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComplaintID" ColumnName="ComplaintID" />
+          <ScalarProperty Name="SupervisorID" ColumnName="SupervisorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="JobDesignation" ColumnName="JobDesignation" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetCaseNumberByUser" FunctionName="ComplaintPortalDBModel.Store.GetCaseNumberByUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ComplaintPortalDBModel.GetCaseNumberByUser_Result">
+          <ScalarProperty Name="TOTAL_OPEN_CASE" ColumnName="TOTAL_OPEN_CASE" />
+          <ScalarProperty Name="THIS_WEEK_CLOSED_CASE" ColumnName="THIS_WEEK_CLOSED_CASE" />
+          <ScalarProperty Name="THIS_MONTH_CLOSED_CASE" ColumnName="THIS_MONTH_CLOSED_CASE" />
+          <ScalarProperty Name="TOTAL_CLOSED_CASE" ColumnName="TOTAL_CLOSED_CASE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="AccountLogs">
+      <EntityTypeMapping TypeName="ComplaintPortalDBModel.AccountLog">
+        <MappingFragment StoreEntitySet="AccountLog">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,24 @@
+﻿@model ComplaintPortalSystem.Models.Category
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Category Details</h2>
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class="btn btn-info"}) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class="btn btn-primary"})
+</p>

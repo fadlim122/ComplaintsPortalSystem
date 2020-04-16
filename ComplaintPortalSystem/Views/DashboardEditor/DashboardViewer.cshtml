@@ -1,0 +1,51 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        .bgimg {
+            z-index: 1;
+            background-color: white;
+            padding: 30px;
+        }
+
+            .bgimg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 98.9%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg">
+        @Html.DevExpress().Dashboard(settings =>
+        {
+            settings.Name = "ViewerExtension";
+            settings.WorkingMode = DevExpress.DashboardWeb.WorkingMode.ViewerOnly;
+            settings.InitialDashboardId = "dashboard3";
+        }).GetHtml()
+        </div>
+</body>
+</html>

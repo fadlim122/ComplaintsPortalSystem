@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ComplaintPortalSystem.Models.ExternalAgency>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Register External Agency</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class="btn btn-primary"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Company
+        </th>
+        <th>
+            Person
+        </th>
+        <th>
+            Contact Number
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactPerson)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class="btn btn-primary"}) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID } , new { @class="btn btn-info"}) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class="btn btn-danger"})
+        </td>
+    </tr>
+}
+
+</table>

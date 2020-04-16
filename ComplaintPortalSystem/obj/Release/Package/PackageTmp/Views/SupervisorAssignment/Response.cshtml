@@ -1,0 +1,136 @@
+﻿@model ComplaintPortalSystem.Models.SupervisorAssignment
+
+@{
+    ViewBag.Title = "Response";
+}
+
+<h2>Response</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <h4>Supervisor Assignment</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Category
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Complaint.Category.CategoryDescription)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Complaint.Title)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Complaint.Title)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Complaint.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Complaint.Description)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Complaint.Attachment)
+            </dt>
+
+            <dd>
+                @if (Model.Complaint.Attachment == null)
+                {
+                    <div>
+                        N.A
+                    </div>
+                }
+                else
+                {
+                    <img src="~/Images/@Model.Complaint.Attachment" height="350" width="450" />
+                }
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Complaint.DateSubmitted)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Complaint.DateSubmitted)
+            </dd>
+            @if (Model.Complaint.PublicEmail != null)
+            {
+                <dt>
+                    @Html.DisplayNameFor(model => model.Complaint.PublicEmail)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Complaint.PublicEmail)
+                </dd>
+            }
+            @if (Model.Complaint.PublicName != null)
+            {
+                <dt>
+                    @Html.DisplayNameFor(model => model.Complaint.PublicName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Complaint.PublicName)
+                </dd>
+            }
+
+        </dl>
+    </div>
+}
+
+@using (Html.BeginForm("Response", "SupervisorAssignment",new { id = @Model.ComplaintID },  FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Response</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.SupervisorID)
+
+        @Html.HiddenFor(model => model.ComplaintID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Status, new SelectList(
+                           new[] {
+                               new { Value = "", Text = "-- Select --" },
+                               new { Value = "PENDING", Text = "PENDING" },
+                               new { Value = "IN_PROGRESS", Text = "IN_PROGRESS" },
+                               new { Value = "COMPLETED", Text = "COMPLETED" },
+                           },
+                           "Value",
+                           "Text"
+                       ), htmlAttributes: new { @class = "control-label col-md-2 dropdown1", id = "mySelect", required = "required" })
+                @*@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Remark, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Remark, 10, 40, htmlAttributes: new { @class = "form-control", style = "width: 100%; max-width: 90%;", placeholder = "Remark (Solution/Description)" })
+                @Html.ValidationMessageFor(model => model.Remark, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Response" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+    <div>
+        @Html.ActionLink("Back to List", "Index", null, new { @class="btn btn-primary"})
+    </div>

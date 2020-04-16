@@ -1,0 +1,275 @@
+﻿using ComplaintPortalSystem.Common;
+using ComplaintPortalSystem.Models;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace ComplaintPortalSystem.Controllers
+{
+    public class ComplaintController : Controller
+    {
+        // GET: Complaint
+        ComplaintPortalDBEntities dbContext = new ComplaintPortalDBEntities();
+
+        //[CustomAuthorize(UserRole.SUPERVISOR)]
+        public ActionResult Index()
+        {
+            return View(dbContext.Complaints.ToList());
+        }
+
+        // GET: Complaint/Details/5
+
+        public ActionResult Details(int id)
+        {
+            var complaint = dbContext.Complaints.ToList().Where(s => s.ID == id).FirstOrDefault();
+            return View(complaint);
+        }
+
+        public ActionResult SupervisorDetails(int id)
+        {
+            var supervisorDetail = dbContext.SupervisorAssignments.ToList().Where(s => s.ComplaintID == id).FirstOrDefault();
+            return View(supervisorDetail);
+        }
+
+
+        public ActionResult Triaged(int id)
+        {
+            ViewData["HandlerAssignmentList"] = dbContext.HandlerAssignments.ToList();
+            var complaint = dbContext.Complaints.ToList().Where(s => s.ID == id).FirstOrDefault();
+            return View();
+        }
+
+        public ActionResult Allocate(int id)
+        {
+            ViewData["IsRedflagList"] = dbContext.Complaints.ToList();
+            ViewData["DepartmentList"] = dbContext.Departments.ToList();
+            ViewData["ComplaintHandlerList"] = dbContext.AccountHolders.Where(s => s.Role == UserRole.COMPLAINT_HANDLER.ToString()).ToList();
+            ViewData["SupervisorList"] = dbContext.AccountHolders.Where(s => s.Role == UserRole.SUPERVISOR.ToString()).ToList();
+            var complaint = dbContext.Complaints.ToList().Where(s => s.ID == id).FirstOrDefault();
+            return View(complaint);
+        }
+
+
+        [HttpPost]
+        public ActionResult Triaged(int id, HandlerAssignment complaint)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+
+                    using (System.Data.Entity.DbContextTransaction trans = dbContext.Database.BeginTransaction())
+                    {
+                        // error here, cannot add remark and status in
+                        dbContext.HandlerAssignments.Add(complaint);
+                        dbContext.SaveChanges();
+                    }
+                    // TODO: Add update logic here
+
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return View(complaint);
+                }
+            }
+            catch (Exception e)
+            {
+                return View();
+            }
+        }
+        
+        public ActionResult Delete(int complainID, int supervisorid)
+        {
+           return View();
+        }
+
+        public ActionResult DeleteSupervisorAssignment(int supervisorID, int complaintID)
+        {
+            var c = dbContext.Complaints.ToList().Where(s => s.ID == complaintID).FirstOrDefault();
+            try
+            {
+                
+                // TODO: Add delete logic here
+                if (ModelState.IsValid)
+                {
+                   
+                    var supervisorAssignment = dbContext.SupervisorAssignments.ToList().Where(s => s.ComplaintID == complaintID && s.SupervisorID == supervisorID).FirstOrDefault();
+                    dbContext.SupervisorAssignments.Remove(supervisorAssignment);
+                    dbContext.SaveChanges();
+                    //return View(c);
+                    return Redirect("Allocate/" + complaintID);
+                    //return RedirectToAction("Allocate", "Complaint");//, new { supervisorId = supervisorID, complaintId = complaintID });
+                }
+                else
+                {
+                    return View(c);
+                }
+            }
+            catch (Exception e)
+            {
+                return View(c);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Allocate(int id , FormCollection form)
+        {
+            var c = dbContext.Complaints.ToList().Where(s => s.ID == id).FirstOrDefault();
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    ViewData["IsRedflagList"] = dbContext.Complaints.ToList();
+                    ViewData["DepartmentList"] = dbContext.Departments.ToList();
+                    ViewData["ComplaintHandlerList"] = dbContext.AccountHolders.Where(s => s.Role == UserRole.COMPLAINT_HANDLER.ToString()).ToList();
+                    ViewData["SupervisorList"] = dbContext.AccountHolders.Where(s => s.Role == UserRole.SUPERVISOR.ToString()).ToList();
+                    
+
+                    using (System.Data.Entity.DbContextTransaction trans = dbContext.Database.BeginTransaction())
+                    {
+                        // error here, cannot add remark and status in
+                        SupervisorAssignment a = new SupervisorAssignment();
+                        a.ComplaintID = Convert.ToInt32(form["ID"].ToString());
+                        a.SupervisorID = Convert.ToInt32(form["Supervisor.AccountHolder.ID"].ToString());
+                       
+                        dbContext.SupervisorAssignments.Add(a);
+                        dbContext.SaveChanges();
+                        trans.Commit();
+                    }
+                    return View(c);
+                }
+                else
+                {
+                    return View(c);
+                }
+            }
+            catch (Exception e)
+            {
+                return View(c);
+            }
+        }
+
+        // GET: Complaint/Create
+
+        public ActionResult Create()
+        {
+            ViewData["CategoryList"] = dbContext.Categories.ToList();
+            return View();
+        }
+
+        // POST: Complaint/Create
+
+        [HttpPost]
+        public ActionResult Create(Complaint complaint, HttpPostedFileBase file)
+        {
+            ViewData["CategoryList"] = dbContext.Categories.ToList();   
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                        using (System.Data.Entity.DbContextTransaction trans = dbContext.Database.BeginTransaction())
+                        {
+                        
+                        complaint.Status = "OPEN";
+                        complaint.IsRedFlag = false;
+                        complaint.DateSubmitted = DateTime.Now;
+                        if (file != null)
+                        {
+                            file.SaveAs(HttpContext.Server.MapPath("~/Images/")
+                                                                  + file.FileName);
+                            complaint.Attachment = file.FileName;
+                        }
+
+                        if(HttpContext.User.Identity.IsAuthenticated)
+                        {
+                            complaint.ComplaintOwnerID = UserSession.UserId;
+
+                        }
+                        
+                        dbContext.Complaints.Add(complaint);
+                        dbContext.SaveChanges();
+                        trans.Commit();
+                        }
+                        return RedirectToAction("Index");
+                }
+                else
+                {
+                    return View(complaint);
+                }
+                // TODO: Add insert logic here
+            }
+            catch (Exception e)
+            {
+
+                return View(complaint);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult AddAssignee()
+        {
+            return View();
+        }
+        [HttpGet]
+        public ActionResult AddAssignee(int id)
+        {
+            return View();
+        }
+
+        // GET: Complaint/Edit/5
+
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        // POST: Complaint/Edit/5
+
+        [HttpPost]
+        public ActionResult Edit(int id, Complaint complaint)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+
+                }
+                // TODO: Add update logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: Complaint/Delete/5
+
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: Complaint/Delete/5
+
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+    }
+}

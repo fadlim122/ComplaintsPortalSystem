@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Import Department";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bgimg {
+            z-index: 1;
+        }
+
+            #bgimg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        #bgimg {
+            background-color: white;
+            padding: 40px;
+            border-radius: 5px;
+        }
+
+        header h2 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .btn {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-right: 20px;
+            border: none;
+            width: 150px;
+            border-radius: 3px;
+            background: #b81818;
+            color: #ffffff;
+        }
+
+            .btn:hover {
+                background: #a71111;
+                color: #ffffff;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Import Department Data to Database</h2>
+    </header>
+    <hr style="border:0.6px solid #dbd9d9;" />
+
+    <div id="bgimg">
+
+        @using (Html.BeginForm("ImportDepartment", "ImportFile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input type="file" name="file" />
+            <br />
+            <input type="submit" value="Import to database" class="btn" />
+        }
+        <br />
+        <div class="text-success">
+            @ViewBag.Success
+        </div>
+    </div>
+</body>
+</html>

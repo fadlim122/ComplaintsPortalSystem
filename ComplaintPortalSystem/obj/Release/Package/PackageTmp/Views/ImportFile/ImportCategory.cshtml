@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Import Category";
+}
+
+<h2>Import data Category to Database</h2>
+<br />
+@using (Html.BeginForm("ImportCategory", "ImportFile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" />
+    <br />
+    <input type="submit" value="Import to database" class="btn btn-primary" />
+}
+<br />
+<div class="text-success">
+    @ViewBag.Success
+</div>

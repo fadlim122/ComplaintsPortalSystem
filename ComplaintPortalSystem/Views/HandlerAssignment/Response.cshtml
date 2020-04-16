@@ -1,0 +1,342 @@
+﻿@model ComplaintPortalSystem.Models.HandlerAssignment
+@using ComplaintPortalSystem.Models;
+@{
+    ViewBag.Title = "Response";
+    IEnumerable<ExternalAgency> externalAgencyList = ViewData["ExternalAgencyList"] as IEnumerable<ExternalAgency>;
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: rgba(0,0,0,0.6);
+        }
+
+        #bg {
+            z-index: 1;
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 50px;
+        }
+
+            #bg:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/05/Murdoch1_web-1333x1000.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                opacity: 0.15;
+            }
+
+        #bg1 {
+            z-index: 1;
+            background-color: white;
+            padding: 30px;
+            margin-top: -90px;
+            margin-bottom: 50px;
+        }
+
+
+        header h2, h3 {
+            color: white;
+            font-family: Verdana;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+
+        dl {
+            margin-top: 10px;
+            padding: 30px;
+            width: 60%;
+            
+        }
+
+        dl {
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            background-color: #f9f5f5;
+            margin: 0 auto;
+        }
+
+        .ie7 dl {
+            overflow: hidden;
+        }
+
+        dt,
+        dd {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+            dd ~ dt,
+            dd ~ dd {
+                border-top: 0.5px solid #bdc8ca;
+            }
+
+        dt {
+            float: left;
+            width: 35%;
+            padding-bottom: 0;
+        }
+
+        .ie7 dt {
+            padding-bottom: 10px;
+            clear: both;
+        }
+
+        dd {
+            margin-left: 35%;
+            border-left: 0.7px dotted #bdc8ca;
+            background-color: #fff;
+        }
+
+        .ie7 dd {
+            margin-left: 40%;
+            overflow: hidden;
+        }
+
+        dd:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+     
+        #mySelect {
+            padding: 7px;
+            width: 40%;
+            border-radius: 3px;
+            border: 0.4px solid grey;
+        }
+
+        .row {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-spacing: 3px;
+            margin-left: -90px;
+        }
+
+        .column {
+            display: table-cell;
+        }
+
+       
+        .btn-success {
+            margin-left: -70px;
+        }
+
+
+        #button {
+            background-color: #969292;
+            color: #ffffff;
+            border: none;
+            margin-top: 35px;
+            margin-left: 170px;
+        }
+
+            #button:hover {
+                background: #747373;
+            }
+
+        @@media only screen and (max-width: 600px) {
+            .btn-info {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function IssueExternal() {
+            var x = document.getElementById("External");
+            var y = document.getElementById("Create");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "block";
+            } else {
+                x.style.display = "none";
+                y.style.display = "none";
+            }
+        }
+    </script>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <header>
+            <h2>Ticket Details</h2>
+        </header>
+        <hr style="border: 0.6px solid #dbd9d9;" />
+
+        <div id="bg">
+            <dl class="dl-horizontal">
+                <dt>
+                    Category
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Complaint.Category.CategoryDescription)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Complaint.Title)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Complaint.Title)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Complaint.Description)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Complaint.Description)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Complaint.Attachment)
+                </dt>
+
+                <dd>
+                    @if (Model.Complaint.Attachment == null)
+                    {
+                        <div>
+                            N.A
+                        </div>
+                    }
+                    else
+                    {
+                        <img src="~/Images/@Model.Complaint.Attachment" height="350" width="450" />
+                    }
+                </dd>
+
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Complaint.DateSubmitted)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Complaint.DateSubmitted)
+                </dd>
+
+                @if (Model.Complaint.PublicEmail != null)
+                {
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Complaint.PublicEmail)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Complaint.PublicEmail)
+                    </dd>
+                }
+
+                @if (Model.Complaint.PublicName != null)
+                {
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Complaint.PublicName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Complaint.PublicName)
+                    </dd>
+                }
+            </dl>
+        </div>
+    }
+
+    @using (Html.BeginForm("Response", "HandlerAssignment", new { id = @Model.ComplaintID }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <header>
+            <h3>Response Ticket</h3>
+        </header>
+        <hr style="border: 0.6px solid #dbd9d9;" />
+
+        <div id="bg">
+            <div class="form-horizontal">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.HandlerID)
+
+                @Html.HiddenFor(model => model.ComplaintID)
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.Status, new SelectList(
+                            new[] {
+                                           new { Value = "", Text = "-- Select --" },
+                                           new { Value = "PENDING", Text = "PENDING" },
+                                           new { Value = "IN_PROGRESS", Text = "IN_PROGRESS" },
+                                           new { Value = "COMPLETED", Text = "COMPLETED" },
+                            },
+                            "Value",
+                            "Text"
+                        ), htmlAttributes: new { @class = "control-label col-md-2 dropdown1", id = "mySelect", required = "required" })
+                        @*@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*<label class="control-label col-md-2" for="Remark">Remark(Solution/Description)</label>*@
+                    @Html.LabelFor(model => model.Remark, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(model => model.Remark, 10, 40, htmlAttributes: new { @class = "form-control", required = "required", style = "width: 100%; max-width: 90%;", placeholder = "Remark (Solution/Description)" })
+                        @Html.ValidationMessageFor(model => model.Remark, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group" id="External" style="display:none">
+                    @Html.LabelFor(model => model.Complaint.ExternalAgency.ID, "Company", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.Complaint.ExternalAgency.ID, new SelectList(externalAgencyList, "ID", "CompanyName"), htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Complaint.ExternalAgency.ID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Response" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div id="bg1">
+        <div class="row">
+            <div class="column">
+                @*<div class="form-group">*@
+                <button onclick="IssueExternal()" class="btn btn-info">Issue External Agency</button>
+                @*</div>*@
+            </div>
+
+            <div class="column">
+                <div class="form-group" id="Create" style="display:none">
+                    <button type="button" onclick="location.href='@Url.Action("Index", "ExternalAgency")'" , htmlAttributes=new { class="btn btn-success" }>
+                        Create/Add External Agency
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary", id = "button" })
+        </div>
+    </div>
+
+
+
+</body>
+</html>
